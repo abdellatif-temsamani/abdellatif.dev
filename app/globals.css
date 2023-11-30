@@ -12,6 +12,7 @@
     @apply from-sky-50;
     @apply to-sky-200;
     @apply bg-gradient-to-b;
+    @apply min-h-screen;
 }
 
 main {
