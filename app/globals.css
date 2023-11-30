@@ -15,6 +15,14 @@
     @apply min-h-screen;
 }
 
-main {
-    @apply min-h-screen;
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 30%;
+
+    background-image: url("/images/filters/grainy.svg");
 }
