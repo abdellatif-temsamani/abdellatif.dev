@@ -6,6 +6,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    @apply text-sky-950;
+
+    /* border: 1px solid red; */
 }
 
 #body {
@@ -15,14 +18,20 @@
     @apply min-h-screen;
 }
 
-body::after {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 30%;
+a {
+    @apply text-sky-900;
+    @apply font-bold;
+}
 
-    background-image: url("/images/filters/grainy.svg");
+a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    @apply bg-sky-900;
+    transition: width 0.3s;
+}
+
+a:hover:after {
+    width: 120%;
 }
