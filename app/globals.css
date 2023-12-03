@@ -10,12 +10,15 @@
 
     /* border: 1px solid red; */
 }
-
-#body {
+body {
     @apply from-sky-50;
     @apply to-sky-200;
     @apply bg-gradient-to-b;
     @apply min-h-screen;
+}
+
+#body {
+    z-index: 1;
 }
 
 a {
@@ -34,4 +37,16 @@ a:after {
 
 a:hover:after {
     width: 120%;
+}
+
+#body::before {
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    background-image: url("/images/grainy.png");
 }
