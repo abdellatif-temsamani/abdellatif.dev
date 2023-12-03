@@ -9,14 +9,12 @@ const navLinks: NavLinkProp[] = [
 
 export default function Nav() {
     return (
-        <nav className="flex gap-6">
+        <ul className="flex gap-6">
             {navLinks.map((navLink: NavLinkProp) => (
-                <NavLink
-                    key={navLink.href}
-                    title={navLink.title}
-                    href={navLink.href}
-                />
+                <li key={navLink.title}>
+                    <NavLink title={navLink.title} href={navLink.href} />
+                </li>
             ))}
-        </nav>
+        </ul>
     );
 }

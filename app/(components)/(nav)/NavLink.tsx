@@ -1,15 +1,13 @@
 import Link from "next/link";
-import { Key } from "react";
 
 export type NavLinkProp = {
-    key?: Key;
     title: string;
     href: string;
 };
 
-export default function NavLink({ key, title, href }: NavLinkProp) {
+export default function NavLink({ title, href }: Readonly<NavLinkProp>) {
     return (
-        <Link className="text-lg" href={href} key={key}>
+        <Link className="text-lg" href={href}>
             {title}
         </Link>
     );
