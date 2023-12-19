@@ -3,7 +3,7 @@ import "@/app/globals.css";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 
-import Header from "@/app/(components)/Header";
+import Header from "@/app/(components)/(header)";
 
 const sora = Sora({
     subsets: ["latin"],
