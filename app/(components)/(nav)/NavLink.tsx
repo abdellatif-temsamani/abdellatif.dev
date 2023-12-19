@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import Styles from "./NavLink.module.css";
+
 export type NavLinkProp = {
     title: string;
     href: string;
@@ -7,7 +9,7 @@ export type NavLinkProp = {
 
 export default function NavLink({ title, href }: Readonly<NavLinkProp>) {
     return (
-        <Link className="text-lg" href={href}>
+        <Link className={Styles.link} href={href}>
             {title}
         </Link>
     );

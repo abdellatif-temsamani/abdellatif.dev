@@ -10,6 +10,7 @@
 
     /* border: 1px solid red; */
 }
+
 body {
     @apply from-sky-50;
     @apply to-sky-200;
@@ -24,19 +25,6 @@ body {
 a {
     @apply text-sky-900;
     @apply font-bold;
-}
-
-a:after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    @apply bg-sky-900;
-    transition: width 0.3s;
-}
-
-a:hover:after {
-    width: 120%;
 }
 
 #body::before {
