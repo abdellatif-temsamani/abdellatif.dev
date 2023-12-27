@@ -10,13 +10,13 @@ const akayaTelivigala = Akaya_Telivigala({
 export default function Footer() {
     return (
         <footer
-            className="flex flex-col gap-7 px-32 pt-16 pb-8 mt-32 bg-sky-200"
+            className="flex flex-col gap-7 px-10 pt-16 pb-8 mt-32 sm:px-32 bg-sky-200"
             id={styles.footer}
         >
             <div className="flex justify-center">
                 <div className="flex flex-col">
                     <h1
-                        className="text-6xl font-bold"
+                        className="text-5xl font-bold sm:text-6xl"
                         style={akayaTelivigala.style}
                     >
                         <span className="text-sky-400">A</span>bdellatif{" "}
@@ -72,9 +72,11 @@ export default function Footer() {
                     strokeWidth="4"
                 />
             </svg>
-            <div className="flex justify-between">
-                <p>Copyright © 2023 Abdellatif.dev All Rights Reserved.</p>
-                <ul className="flex flex-row gap-4">
+            <div className="flex flex-col gap-10 justify-between xl:flex-row xl:gap-0">
+                <p className="text-sm sm:text-base">
+                    Copyright © 2023 Abdellatif.dev All Rights Reserved.
+                </p>
+                <ul className="flex flex-col gap-4 sm:flex-row">
                     <li>
                         <Link href="/copyright">Copyright Policy</Link>
                     </li>
