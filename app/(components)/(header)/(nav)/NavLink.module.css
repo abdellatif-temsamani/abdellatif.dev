@@ -1,3 +1,7 @@
+.link {
+    @apply font-bold;
+}
+
 .link:after {
     content: "";
     display: block;

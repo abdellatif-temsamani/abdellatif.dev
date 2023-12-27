@@ -22,11 +22,6 @@ body {
     z-index: 1;
 }
 
-a {
-    @apply text-sky-900;
-    @apply font-bold;
-}
-
 #body::before {
     content: "";
     position: fixed;
@@ -35,6 +30,9 @@ a {
     left: 0;
     height: 100%;
     width: 100%;
-
     background-image: url("/images/grainy.png");
+}
+
+a {
+    @apply text-sky-900;
 }
