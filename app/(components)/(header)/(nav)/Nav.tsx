@@ -45,7 +45,13 @@ export default function Nav() {
             >
                 {navLinks.map((navLink: NavLinkProp) => (
                     <li key={navLink.title}>
-                        <Link className="font-bold font-2xl" href={navLink.href}>
+                        <Link
+                            className="font-bold font-2xl"
+                            href={navLink.href}
+                            onClick={() => {
+                                setMobileMenuOpen(false);
+                            }}
+                        >
                             {navLink.title}
                         </Link>
                     </li>
