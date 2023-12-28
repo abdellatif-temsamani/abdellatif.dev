@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex justify-between flex-col sm:flex-row gap-10 sm:gap-0">
                 <ul className="flex flex-col gap-2">
                     <li className="mb-3 font-bold">Quick info</li>
                     <li>
