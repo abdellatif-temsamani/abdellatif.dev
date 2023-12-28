@@ -16,7 +16,7 @@ export default function Footer() {
             <div className="flex justify-center">
                 <div className="flex flex-col">
                     <h1
-                        className="text-5xl font-bold sm:text-6xl"
+                        className="text-4xl font-bold sm:text-6xl"
                         style={akayaTelivigala.style}
                     >
                         <span className="text-sky-400">A</span>bdellatif{" "}
