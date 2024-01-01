@@ -30,9 +30,19 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background-image: url("/images/grainy.png");
+    background-image: url("/images/effects/grainy.png");
 }
 
 a {
     @apply text-sky-900;
+}
+
+main {
+    margin: 80px 64px 0 64px;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 40px 32px 0 32px;
+    }
 }

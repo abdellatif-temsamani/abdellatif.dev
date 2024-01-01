@@ -1,5 +1,5 @@
 #footer {
-    background-image: url("/images/grainy.png"), url("/images/patterns.png");
+    background-image: url("/images/effects/grainy.png"), url("/images/effects/patterns.png");
     background-size: 100%;
     background-repeat: repeat;
 }

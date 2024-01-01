@@ -26,7 +26,7 @@ export default function Nav() {
             </ul>
 
             <button
-                className={`absolute right-10 z-40 sm:hidden top-30
+                className={`fixed right-10 z-40 sm:hidden top-30
                             ${mobileMenuOpen ? "flex" : "hidden"}`}
                 type="button"
                 onClick={() => {
