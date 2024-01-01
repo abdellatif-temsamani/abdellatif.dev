@@ -16,19 +16,19 @@ export default function Footer() {
             <div className="flex justify-center">
                 <div className="flex flex-col">
                     <h1
-                        className="text-4xl font-bold sm:text-6xl"
+                        className="text-4xl font-bold sm:text-6xl 2xl:text-7xl"
                         style={akayaTelivigala.style}
                     >
                         <span className="text-sky-400">A</span>bdellatif{" "}
                         <span className="text-sky-400">D</span>ev
                     </h1>
-                    <p className="text-sm">
-                        <b>Empower</b> Your Digital Success
+                    <p className="text-sm 2xl:text-xl">
+                        <span className="font-extrabold">Empower</span> Your Digital Success
                     </p>
                 </div>
             </div>
 
-            <div className="flex justify-between flex-col sm:flex-row gap-10 sm:gap-0">
+            <div className="flex flex-col gap-10 justify-between sm:flex-row sm:gap-0">
                 <ul className="flex flex-col gap-2">
                     <li className="mb-3 font-bold">Quick info</li>
                     <li>
@@ -63,14 +63,7 @@ export default function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <title>line</title>
-                <line
-                    x1={0}
-                    y1={0}
-                    x2="100%"
-                    y2={0}
-                    stroke="#082F49"
-                    strokeWidth="4"
-                />
+                <line x1={0} y1={0} x2="100%" y2={0} stroke="#082F49" strokeWidth="4" />
             </svg>
             <div className="flex flex-col gap-10 justify-between xl:flex-row xl:gap-0">
                 <p className="text-sm sm:text-base">
