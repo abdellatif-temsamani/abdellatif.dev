@@ -28,19 +28,16 @@ body {
 
 #grainy {
     z-index: 1;
-    margin: 0 32px 0 32px;
 }
 
 main {
+    margin: 0 32px 0 32px;
     margin-top: 40px;
 }
 
 @media (min-width: 1024px) {
-    #grainy {
-        margin: 0 64px 0 64px;
-    }
-
     maim {
+        margin: 0 64px 0 64px;
         margin-top: 80px;
     }
 }
