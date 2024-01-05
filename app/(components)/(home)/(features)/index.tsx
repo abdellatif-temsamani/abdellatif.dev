@@ -5,7 +5,7 @@ import { Feature, features } from "@/lib/features";
 export default function Features() {
     return (
         <div className="flex flex-col gap-14 justify-between sm:gap-12">
-            <H1 className="sm:w-1/2">
+            <H1 className="lg:w-1/2">
                 We specialize in Web Development, Mobile Application
                 Development, and Custom Software Solutions
             </H1>

@@ -13,7 +13,7 @@ export default function Button({
 }: Readonly<ButtonProps>) {
     return (
         <button
-            className={`py-2 px-8 font-extrabold  shadow-primary
+            className={`py-2 px-8 font-extrabold shadow-primary
                         active:shadow-none active:translate-y-1
                         active:scale-95 transition-all duration-300
                         border-2 border-sky-950
