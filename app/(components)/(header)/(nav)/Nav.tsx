@@ -6,10 +6,13 @@ import { FaBars, FaChevronDown } from "react-icons/fa6";
 import NavLink, { type NavLinkProp } from "./NavLink";
 
 const navLinks: NavLinkProp[] = [
-    { title: "About", href: "/about" },
-    { title: "Services", href: "/services" },
-    { title: "Contact", href: "/contact" },
-    { title: "Case Studies", href: "/case-studies" },
+    /**
+     * NOTE: commented out links are not yet implemented
+     */
+    // { title: "About", href: "/about" },
+    // { title: "Services", href: "/services" },
+    // { title: "Contact", href: "/contact" },
+    // { title: "Case Studies", href: "/case-studies" },
 ];
 
 export default function Nav() {

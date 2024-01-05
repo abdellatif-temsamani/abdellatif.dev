@@ -15,18 +15,13 @@ export function Hero() {
 
                 <div className="flex flex-col gap-8 sm:gap-4">
                     <p>
-                        At Abdellatif Dev, we are passionate about turning your
-                        ideas into reality. Our experienced software developers
-                        are dedicated to helping your business reach new heights
-                        with innovative technology.
+                        At Abdellatif Dev, we are passionate about turning your ideas into
+                        reality. Our experienced software developers are dedicated to
+                        helping your business reach new heights with innovative technology.
                     </p>
                     <div className="flex flex-col gap-6 sm:flex-row">
-                        <Button text="Get Started" onClick={() => {}} />
-                        <Button
-                            text="Contact Us"
-                            onClick={() => {}}
-                            primary={false}
-                        />
+                        <Button text="Get Started" onClick={() => { }} />
+                        <Button text="Contact Us" onClick={() => { }} primary={false} />
                     </div>
                 </div>
             </div>
