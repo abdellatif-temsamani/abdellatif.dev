@@ -1,55 +1,83 @@
-# Home page
+![ad logo](./public/images/icons/ad.svg)
 
-Welcome to our software consulting startup's homepage.
+<!-- toc -->
 
-- **Testimonials**: Discover what our clients have to say about our services.
-- **Contact Us**: Get in touch with our team for inquiries and consultations.
-- **Partnerships**: Learn about partnership opportunities for mutual growth.
+- [Abdellatif Dev](#abdellatif-dev)
+  * [About](#about)
+  * [Contact](#contact)
+- [LICENSE](#license)
+- [Contributing](#contributing)
+- [Development](#development)
+  * [Requirements](#requirements)
+  * [start the development server](#start-the-development-server)
+  * [build the project](#build-the-project)
+- [Tech Stack](#tech-stack)
+  * [Linters and formatters](#linters-and-formatters)
 
-# About Us
+<!-- tocstop -->
 
-Learn more about our company, mission, and team.
+# Abdellatif Dev
 
-- **Process**: Understand our consulting and development process.
-- **FAQ**: Find answers to frequently asked questions about our services and
-  processes.
+> Empower Your Digital Success
 
-# Services
+## About
 
-Explore the software consulting services we offer.
+Hi, I'm Abdellatif, a passionate self-taught Full Stack web developer and a
+freelance software engineer from Morocco. My passion for software lies with
+dreaming up ideas and making them come true with elegant interfaces. I take
+great care in the experience, architecture, and code quality of the things I
+build.
 
-- **Custom Software Development**
-- **Web Application Development**
-- **Mobile App Development**
-- **UI/UX Design**
-- **Technology Consulting**
+[abdellatif.dev](abdellatif.dev) is my personal website, where I share my
+freelance services and my case studies. I also write articles about software
+engineering and development trends.
 
-# Portfolio
+## Contact
 
-See our past projects and success stories.
+- [Email](mailto:contact@abdellatif.dev)
+- [Twitter](https://twitter.com/AbdellatifDev)
+- [LinkedIn](https://www.linkedin.com/company/abdellatif-dev)
 
-- **Introduction**: Learn about my vision, and values.
+# LICENSE
 
-- **Skills**: Learn about the technologies and tools we use to build software.
+[GNU AFFERO GENERAL PUBLIC LICENSE V3](LICENSE) ©
+[Abdellatif Dev](https://abdellatif.dev)
 
-- **Case Studies**: Dive deep into detailed analyses of our successful client
-  projects.
+# Contributing
 
-- **Projects**: Browse through our portfolio of past projects.
+Currently, I'm not accepting any contributions, but you can open an issue if you
+have any suggestions or questions. I'll be happy to hear from you.
 
-# Blog
+# Development
 
-Read our latest articles on software trends, best practices, and industry
-insights.
+## Requirements
 
-# Privacy Policy
+- [Node.js](https://nodejs.org/en/)
+- [pnpm](https://pnpm.io/)
 
-Understand how we handle your data and protect your privacy.
+IDE of your choice, I recommend [neovim](https://neovim.io/) with the
+[lsp-config](https://github.com/neovim/nvim-lspconfig) plugin.
 
-# Terms of Service
+## start the development server
 
-Review the terms and conditions of using our services.
+```bash
+pnpm dev
+```
 
-# SiteMap.xml
+## build the project
 
-Navigate through the entire website structure at a glance.
+```bash
+pnpm build
+```
+
+# Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [react-icons](https://react-icons.github.io/react-icons/)
+
+## Linters and formatters
+
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
