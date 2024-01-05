@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Home() {
+export default function NoTFound() {
     return (
         <main className="flex flex-col gap-8 justify-center items-center py-2 min-h-screen text-center">
             <h1 className="text-lg font-bold lg:text-4xl">
@@ -8,7 +8,7 @@ export default function Home() {
             </h1>
 
             <Image
-                src="/image.svg"
+                src="/images/hero.svg"
                 alt="Under Construction"
                 width={500}
                 height={500}
