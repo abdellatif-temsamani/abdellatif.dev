@@ -1,3 +1,11 @@
+/**
+ * @type {ButtonProps}
+ *
+ * @param text
+ * @param onClick
+ * @param type
+ * @param primary
+ */
 type ButtonProps = {
     text: string;
     onClick: () => void;

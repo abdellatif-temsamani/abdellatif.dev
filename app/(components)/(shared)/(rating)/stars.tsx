@@ -1,9 +1,19 @@
 import { FaStar } from "react-icons/fa6";
 
+/**
+ * @type {StarsProps}
+ *
+ * @param rating
+ */
 type StarsProps = {
     rating: number;
 };
 
+/**
+ * Card component
+ *
+ * @param {StarsProps} { rating }
+ */
 export default function Stars({ rating }: Readonly<StarsProps>) {
     return (
         <div className="flex gap-1">

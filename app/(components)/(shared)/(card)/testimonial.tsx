@@ -5,18 +5,29 @@ import { Testimonial } from "@/lib/testimonial";
 
 import Stars from "../(rating)/stars";
 
+/**
+ * @type {TestimonialCardProps}
+ *
+ * @property key
+ * @property testimonial
+ */
 type TestimonialCardProps = {
     key: Key | null | undefined;
     testimonial: Testimonial;
 };
 
+/**
+ * TestimonialCard component
+ *
+ * @param {TestimonialCardProps} { key, testimonial }
+ */
 export default function TestimonialCard({
     key,
     testimonial,
 }: Readonly<TestimonialCardProps>) {
     return (
         <div key={key} className="flex flex-col gap-5 p-8">
-            <Stars rating={testimonial.starts} />
+            <Stars rating={testimonial.stars} />
             <div>
                 <svg
                     className="w-1/3"
@@ -38,7 +49,7 @@ export default function TestimonialCard({
 
             <p className="font-bold">{testimonial.quote}</p>
             <div className="flex flex-col gap-5 justify-evenly items-center lg:flex-row">
-                <div className="flex flex-col gap-6 lg:gap-2 items-center lg:flex-row">
+                <div className="flex flex-col gap-6 items-center lg:flex-row lg:gap-2">
                     <Image
                         className="rounded-2xl"
                         src={testimonial.user.avatar}
@@ -49,8 +60,7 @@ export default function TestimonialCard({
                     <div className="flex flex-col gap-1 ml-2">
                         <p className="font-bold">{testimonial.user.name}</p>
                         <p>
-                            {testimonial.user.role},{" "}
-                            {testimonial.user.company.name}
+                            {testimonial.user.role}, {testimonial.user.company.name}
                         </p>
                     </div>
                 </div>

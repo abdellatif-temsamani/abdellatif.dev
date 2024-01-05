@@ -1,6 +1,14 @@
 "use client";
 import Image from "next/image";
 
+/**
+ * @type {withImageProps}
+ *
+ * @property image
+ * @property alt
+ * @property hideOnMobile
+ * @property children
+ */
 type withImageProps = {
     image: string;
     alt: string;
@@ -8,6 +16,11 @@ type withImageProps = {
     children: React.ReactNode;
 };
 
+/**
+ * WithImage component
+ *
+ * @param {withImageProps} { image, alt, children, hideOnMobile }
+ */
 export function WithImage({
     image,
     alt,

@@ -7,7 +7,12 @@ import { type NavLinkProp, navLinks } from "@/lib/routes";
 
 import NavLink from "./NavLink";
 
-export default function Nav() {
+/**
+ * Nav component
+ *
+ * @returns {JSX.Element}
+ */
+export default function Nav(): JSX.Element {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (

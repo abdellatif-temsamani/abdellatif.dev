@@ -3,7 +3,12 @@ import { testimonials } from "@/lib/testimonial";
 import TestimonialCard from "../../(shared)/(card)/testimonial";
 import H1 from "../../(shared)/(title)/H1";
 
-export default function Testimonials() {
+/**
+ * Testimonials component (home page)
+ *
+ * @returns {JSX.Element}
+ */
+export default function Testimonials(): JSX.Element {
     return (
         <div className="flex flex-col gap-14 sm:gap-10">
             <div className="flex flex-col gap-2">
@@ -16,7 +21,7 @@ export default function Testimonials() {
                     return (
                         <TestimonialCard
                             testimonial={testimonial}
-                            key={testimonial.starts}
+                            key={testimonial.stars}
                         />
                     );
                 })}

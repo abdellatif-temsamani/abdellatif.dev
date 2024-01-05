@@ -2,7 +2,13 @@ import Card from "@/app/(components)/(shared)/(card)";
 import H1 from "@/app/(components)/(shared)/(title)/H1";
 import { Feature, features } from "@/lib/features";
 
-export default function Features() {
+/**
+ * features component (home page)
+ * contains top 3 features.
+ *
+ * @returns {JSX.Element}
+ */
+export default function Features(): JSX.Element {
     return (
         <div className="flex flex-col gap-14 justify-between sm:gap-12">
             <H1 className="lg:w-1/2">

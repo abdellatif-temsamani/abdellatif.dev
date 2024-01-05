@@ -4,11 +4,22 @@ import { FaAnglesRight, FaCode } from "react-icons/fa6";
 
 import { Feature } from "@/lib/features";
 
+/**
+ * @type {CardProps}
+ *
+ * @property key
+ * @property  cardInfo
+ */
 type CardProps = {
     key: Key | null | undefined;
     cardInfo: Feature;
 };
 
+/**
+ * Card component
+ *
+ * @param {CardProps} { key, cardInfo }
+ */
 export default function Card({ key, cardInfo }: Readonly<CardProps>) {
     return (
         <div

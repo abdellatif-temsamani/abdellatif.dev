@@ -7,7 +7,12 @@ import icon from "@/public/images/icons/ad.svg";
 
 import Nav from "./(nav)/Nav";
 
-export default function Header() {
+/**
+ * Header component
+ *
+ * @returns {JSX.Element}
+ */
+export default function Header(): JSX.Element {
     return (
         <nav className="flex justify-between items-center py-8 px-6 sm:items-end sm:px-16 text-end">
             <Link href="/" className="after:hover:w-0">
