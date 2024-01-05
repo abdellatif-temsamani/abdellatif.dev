@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { NavLinkProp } from "@/app/lib/routes";
+import { NavLinkProp } from "@/lib/routes";
 
 import Styles from "./NavLink.module.css";
 

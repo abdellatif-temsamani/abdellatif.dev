@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaChevronDown } from "react-icons/fa6";
 
-import { type NavLinkProp, navLinks } from "@/app/lib/routes";
+import { type NavLinkProp, navLinks } from "@/lib/routes";
 
 import NavLink from "./NavLink";
 

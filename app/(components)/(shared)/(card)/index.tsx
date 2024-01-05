@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Key } from "react";
 import { FaAnglesRight, FaCode } from "react-icons/fa6";
 
-import { Feature } from "@/app/lib/features";
+import { Feature } from "@/lib/features";
 
 type CardProps = {
     key: Key | null | undefined;
@@ -15,11 +15,11 @@ export default function Card({ key, cardInfo }: Readonly<CardProps>) {
             className="flex flex-col gap-4 justify-evenly p-6 border-2 transition-colors duration-500 sm:w-96 group shadow-card hover:bg-sky-900"
             key={key}
         >
-            <FaCode className="w-8 h-8  sm:w-12 sm:h-12 fill-sky-900 group-hover:fill-sky-50" />
-            <h3 className="text-lg sm:text-xl font-bold text-sky-950 group-hover:text-sky-50">
+            <FaCode className="w-8 h-8 sm:w-12 sm:h-12 fill-sky-900 group-hover:fill-sky-50" />
+            <h3 className="text-lg font-bold sm:text-xl text-sky-950 group-hover:text-sky-50">
                 {cardInfo.title}
             </h3>
-            <h3 className="text-sm sm:text-base font-normal text-sky-900 group-hover:text-sky-200">
+            <h3 className="text-sm font-normal sm:text-base text-sky-900 group-hover:text-sky-200">
                 {cardInfo.description}
             </h3>
             <Link

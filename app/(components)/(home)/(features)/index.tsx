@@ -1,6 +1,6 @@
 import Card from "@/app/(components)/(shared)/(card)";
 import H1 from "@/app/(components)/(shared)/(title)/H1";
-import { Feature, features } from "@/app/lib/features";
+import { Feature, features } from "@/lib/features";
 
 export default function Features() {
     return (
