@@ -3,17 +3,9 @@ import Link from "next/link";
 import { useState } from "react";
 import { FaBars, FaChevronDown } from "react-icons/fa6";
 
-import NavLink, { type NavLinkProp } from "./NavLink";
+import { type NavLinkProp, navLinks } from "@/app/lib/routes";
 
-const navLinks: NavLinkProp[] = [
-    /**
-     * NOTE: commented out links are not yet implemented
-     */
-    // { title: "About", href: "/about" },
-    // { title: "Services", href: "/services" },
-    // { title: "Contact", href: "/contact" },
-    // { title: "Case Studies", href: "/case-studies" },
-];
+import NavLink from "./NavLink";
 
 export default function Nav() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
