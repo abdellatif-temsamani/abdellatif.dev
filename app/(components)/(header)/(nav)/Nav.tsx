@@ -32,6 +32,7 @@ export default function Nav() {
             </button>
 
             <ul
+                id="waves"
                 className={`gap-6 sm:hidden
                             fixed top-0 left-0 bg-sky-200
                             w-full h-full p-20
@@ -41,7 +42,7 @@ export default function Nav() {
                 {navLinks.map((navLink: NavLinkProp) => (
                     <li key={navLink.title}>
                         <Link
-                            className="font-bold font-2xl"
+                            className="text-3xl font-bold"
                             href={navLink.href}
                             onClick={() => {
                                 setMobileMenuOpen(false);

@@ -1,12 +1,12 @@
 type H1Props = {
-    text: string;
+    children: React.ReactNode;
     className?: string;
 };
 
-export default function H1({ text, className }: Readonly<H1Props>) {
+export default function H1({ children, className }: Readonly<H1Props>) {
     return (
-        <h1 className={`text-xl font-extrabold sm:text-3xl ${className}`}>
-            {text}
+        <h1 className={`text-2xl font-extrabold sm:text-3xl ${className}`}>
+            {children}
         </h1>
     );
 }

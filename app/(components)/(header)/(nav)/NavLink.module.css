@@ -9,6 +9,7 @@
     height: 3px;
     @apply bg-sky-900;
     @apply text-lg;
+    @apply text-2xl;
     transition: width 0.5s;
 }
 

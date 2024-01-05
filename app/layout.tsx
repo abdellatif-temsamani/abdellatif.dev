@@ -28,7 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={sora.className}>
-                <div id="body">
+                <div id="grainy">
                     <Header />
                     {children}
                     <Footer />

@@ -1,8 +1,6 @@
 import { Akaya_Telivigala } from "next/font/google";
 import Link from "next/link";
 
-import styles from "./footer.module.css";
-
 const akayaTelivigala = Akaya_Telivigala({
     subsets: ["latin"],
     weight: ["400"],
@@ -11,7 +9,7 @@ export default function Footer() {
     return (
         <footer
             className="flex flex-col gap-7 px-10 pt-16 pb-8 mt-32 sm:px-32 bg-sky-200"
-            id={styles.footer}
+            id="waves"
         >
             <div className="flex justify-center">
                 <div className="flex flex-col">
@@ -23,7 +21,8 @@ export default function Footer() {
                         <span className="text-sky-400">D</span>ev
                     </h1>
                     <p className="text-sm 2xl:text-xl">
-                        <span className="font-extrabold">Empower</span> Your Digital Success
+                        <span className="font-extrabold">Empower</span> Your
+                        Digital Success
                     </p>
                 </div>
             </div>
@@ -63,7 +62,14 @@ export default function Footer() {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <title>line</title>
-                <line x1={0} y1={0} x2="100%" y2={0} stroke="#082F49" strokeWidth="4" />
+                <line
+                    x1={0}
+                    y1={0}
+                    x2="100%"
+                    y2={0}
+                    stroke="#082F49"
+                    strokeWidth="4"
+                />
             </svg>
             <div className="flex flex-col gap-10 justify-between xl:flex-row xl:gap-0">
                 <p className="text-sm sm:text-base">

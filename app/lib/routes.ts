@@ -7,8 +7,9 @@ export const navLinks: NavLinkProp[] = [
     /**
      * NOTE: commented out links are not yet implemented
      */
-    // { title: "Contact", href: "/contact" },
-    // { title: "About", href: "/about" },
+    { title: "Home", href: "/" },
+    { title: "Contact", href: "/contact" },
+    { title: "About", href: "/about" },
     // { title: "Services", href: "/services" },
     // { title: "Case Studies", href: "/case-studies" },
 ];
