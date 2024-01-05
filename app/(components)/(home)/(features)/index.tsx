@@ -6,10 +6,10 @@ export default function Features() {
     return (
         <div className="flex flex-col gap-14 justify-between sm:gap-12">
             <H1 className="sm:w-1/2">
-                We specialize in Web Development, Mobile Application Development, and
-                Custom Software Solutions
+                We specialize in Web Development, Mobile Application
+                Development, and Custom Software Solutions
             </H1>
-            <div className="flex flex-col gap-14 justify-evenly mx-10 sm:flex-row">
+            <div className="flex flex-col gap-14 justify-between lg:flex-row">
                 {features.map((feature: Feature) => {
                     return <Card key={feature.title} cardInfo={feature} />;
                 })}

@@ -9,7 +9,7 @@ export default function Hero() {
         <WithImage image="/images/hero.svg" alt="Hero">
             <H1>Welcome To Abdellatif Dev - Empower Your Digital Success</H1>
 
-            <div className="flex flex-col gap-8 sm:gap-4">
+            <div className="flex flex-col gap-8 md:gap-4">
                 <p>
                     At Abdellatif Dev, we are passionate about turning your ideas into
                     reality. Our experienced software developers are dedicated to helping

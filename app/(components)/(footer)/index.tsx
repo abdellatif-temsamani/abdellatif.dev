@@ -8,7 +8,7 @@ const akayaTelivigala = Akaya_Telivigala({
 export default function Footer() {
     return (
         <footer
-            className="flex flex-col gap-7 px-10 pt-16 pb-8 mt-32 sm:px-32 bg-sky-200"
+            className="flex flex-col gap-7 px-10 pt-16 pb-8 mt-32 md:px-32 bg-sky-200"
             id="waves"
         >
             <div className="flex justify-center">
