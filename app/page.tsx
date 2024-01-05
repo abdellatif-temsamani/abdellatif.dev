@@ -12,7 +12,10 @@ export default function Home() {
                 <Hero />
                 <Features />
                 <InnovaTech />
-                <Testimonials />
+                {/**
+                     * NOTE: Uncomment when ready
+                     *<Testimonials />
+                     */}
             </article>
         </main>
     );
