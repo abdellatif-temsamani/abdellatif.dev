@@ -12,8 +12,7 @@ export default function Home() {
                 <Hero />
                 <Features />
                 <InnovaTech />
-                {/**
-                     * NOTE: Uncomment when ready
+                {/** NOTE: Uncomment when ready
                      *<Testimonials />
                      */}
             </article>
