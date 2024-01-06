@@ -31,14 +31,12 @@ body {
 }
 
 main {
-    margin: 0 32px 0 32px;
-    margin-top: 40px;
+    margin: 40px 32px 0 32px;
 }
 
 @media (min-width: 1024px) {
-    maim {
-        margin: 0 64px 0 64px;
-        margin-top: 80px;
+    main {
+        margin: 80px 64px 0 64px;
     }
 }
 
