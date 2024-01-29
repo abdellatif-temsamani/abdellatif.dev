@@ -54,3 +54,9 @@ main {
 a {
     @apply text-sky-900;
 }
+
+@layer base {
+    h1 {
+        @apply text-2xl font-extrabold sm:text-4xl;
+    }
+}
