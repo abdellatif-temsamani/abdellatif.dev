@@ -55,61 +55,12 @@ export type Testimonial = {
 export const testimonials: Testimonial[] = [
     {
         stars: 5,
-        quote:
-            "Our Experience with Abdellatif Dev has been exceptional. Their team is highly skilled and delivers top-notch solutions.",
+        quote: "Working with Abdellatif was a good experience. He is a software developer who consistently delivers high-quality code. Abdellatif is a reliable team player, always willing to lend a hand and share his expertise.",
         user: {
             name: "Abdellatif M. Temsamani",
             avatar: "/images/clients/avatars/abdellatif_temsamani.jpg",
             linkedin: "https://www.linkedin.com/in/abdellatif-m-399999225/",
             role: "CEO",
-            company: {
-                name: "Abdellatif Dev",
-                logo: "/images/clients/logos/abdellatif_dev.jpeg",
-                linkedin: "https://www.linkedin.com/company/abdellatif-dev/",
-            },
-        },
-    },
-    {
-        stars: 4,
-        quote:
-            "Our Experience with Abdellatif Dev has been exceptional. Their team is highly skilled and delivers top-notch solutions.",
-        user: {
-            name: "Abdellatif M. Temsamani",
-            avatar: "/images/clients/avatars/abdellatif_temsamani.jpg",
-            linkedin: "https://www.linkedin.com/in/abdellatif-m-399999225/",
-            role: "Software Engineer",
-            company: {
-                name: "Abdellatif Dev",
-                logo: "/images/clients/logos/abdellatif_dev.jpeg",
-                linkedin: "https://www.linkedin.com/company/abdellatif-dev/",
-            },
-        },
-    },
-    {
-        stars: 3,
-        quote:
-            "Our Experience with Abdellatif Dev has been exceptional. Their team is highly skilled and delivers top-notch solutions.",
-        user: {
-            name: "Abdellatif M. Temsamani",
-            avatar: "/images/clients/avatars/abdellatif_temsamani.jpg",
-            linkedin: "https://www.linkedin.com/in/abdellatif-m-399999225/",
-            role: "co-founder",
-            company: {
-                name: "Abdellatif Dev",
-                logo: "/images/clients/logos/abdellatif_dev.jpeg",
-                linkedin: "https://www.linkedin.com/company/abdellatif-dev/",
-            },
-        },
-    },
-    {
-        stars: 4,
-        quote:
-            "Our Experience with Abdellatif Dev has been exceptional. Their team is highly skilled and delivers top-notch solutions.",
-        user: {
-            name: "Abdellatif M. Temsamani",
-            avatar: "/images/clients/avatars/abdellatif_temsamani.jpg",
-            linkedin: "https://www.linkedin.com/in/abdellatif-m-399999225/",
-            role: "QA Engineer",
             company: {
                 name: "Abdellatif Dev",
                 logo: "/images/clients/logos/abdellatif_dev.jpeg",

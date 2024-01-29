@@ -1,5 +1,6 @@
 .link {
     @apply font-bold;
+    @apply text-xl;
 }
 
 .link:after {
