@@ -22,12 +22,6 @@ export const metadata: Metadata = {
     title: "Abdellatif Dev",
     description: "Empower Your Digital Success",
     applicationName: "Abdellatif Dev",
-    openGraph: {
-        type: "website",
-        title: "Abdellatif Dev",
-        description: "Empower Your Digital Success",
-        url: new URL("https://www.abdellatif.dev/"),
-    },
     metadataBase: new URL("https://www.abdellatif.dev/"),
     keywords: [
         "Abdellatif Dev",
