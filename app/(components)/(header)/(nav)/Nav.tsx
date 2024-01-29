@@ -1,11 +1,9 @@
-"use client";
 import Link from "next/link";
-import { useState } from "react";
-import { FaBars, FaChevronDown } from "react-icons/fa6";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 import { type NavLinkProp, navLinks } from "@/lib/routes";
 
-import NavLink from "./NavLink";
+import Styles from "./Nav.module.css";
 
 /**
  * Nav component
@@ -13,60 +11,29 @@ import NavLink from "./NavLink";
  * @returns {JSX.Element}
  */
 export default function Nav(): JSX.Element {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
     return (
         <>
-            <ul className="hidden gap-6 sm:flex">
-                {navLinks.map((navLink: NavLinkProp) => (
-                    <li key={navLink.title}>
-                        <NavLink title={navLink.title} href={navLink.href} />
-                    </li>
-                ))}
-            </ul>
+            <input id="mobile-menu" type="checkbox" className="hidden peer" />
+            <label
+                htmlFor="mobile-menu"
+                className="cursor-pointer md:hidden peer-checked:hidden"
+            >
+                <FaChevronDown size={32} />
+            </label>
+            <label
+                htmlFor="mobile-menu"
+                className="hidden cursor-pointer md:peer-checked:hidden peer-checked:block"
+            >
+                <FaChevronUp size={32} />
+            </label>
 
-            <button
-                className={`fixed right-10 z-40 sm:hidden top-30
-                            ${mobileMenuOpen ? "flex" : "hidden"}`}
-                type="button"
-                onClick={() => {
-                    setMobileMenuOpen(false);
-                }}
-            >
-                <FaChevronDown size={40} />
-            </button>
-
-            <ul
-                id="waves"
-                className={`gap-6 sm:hidden
-                            fixed top-0 left-0 bg-sky-200
-                            w-full h-full p-20
-                            flex-col justify-center items-start
-                            ${mobileMenuOpen ? "flex" : "hidden"}`}
-            >
+            <nav className="nav-menu">
                 {navLinks.map((navLink: NavLinkProp) => (
-                    <li key={navLink.title}>
-                        <Link
-                            className="text-3xl font-bold"
-                            href={navLink.href}
-                            onClick={() => {
-                                setMobileMenuOpen(false);
-                            }}
-                        >
-                            {navLink.title}
-                        </Link>
-                    </li>
+                    <Link key={navLink.title} className={Styles.link} href={navLink.href}>
+                        {navLink.title}
+                    </Link>
                 ))}
-            </ul>
-            <button
-                className="sm:hidden"
-                type="button"
-                onClick={() => {
-                    setMobileMenuOpen(true);
-                }}
-            >
-                <FaBars size={40} />
-            </button>
+            </nav>
         </>
     );
 }
