@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 
@@ -28,6 +29,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={sora.className}>
+                <SpeedInsights />
                 <div id="grainy">
                     <Header />
                     {children}
