@@ -30,8 +30,12 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "app",
-        site: "https://www.abdellatif.dev/",
-        creator: "abdellatif_dev"
+        app: {
+            id: {
+                iphone: "Abdellatif Dev",
+                googleplay: "Abdellatif Dev",
+            },
+        },
     },
     metadataBase: new URL("https://www.abdellatif.dev/"),
     keywords: [
@@ -62,11 +66,6 @@ export const metadata: Metadata = {
     ],
     publisher: "Abdellatif Mkaref Temsamani",
     category: "consulting, web development, mobile applications",
-    icons: {
-        icon: "/images/icons/ad.svg",
-        shortcut: "/images/icons/ad.svg",
-        apple: "/images/icons/ad.svg",
-    },
 };
 
 export default function RootLayout({
