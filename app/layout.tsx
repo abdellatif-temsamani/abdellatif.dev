@@ -1,6 +1,7 @@
 import "@/app/globals.css";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import type { Viewport } from "next";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 
@@ -12,13 +13,48 @@ const sora = Sora({
     weight: ["200", "400", "600", "700"],
 });
 
-/**
- * TODO: add more metadata
- *
- */
+export const viewport: Viewport = {
+    themeColor: "#e0f2fe",
+    colorScheme: "only light",
+};
+
 export const metadata: Metadata = {
     title: "Abdellatif Dev",
     description: "Empower Your Digital Success",
+    applicationName: "Abdellatif Dev",
+    keywords: [
+        "Abdellatif Dev",
+        "passionate",
+        "turning",
+        "visions",
+        "reality",
+        "cutting-edge",
+        "software solutions",
+        "leading",
+        "development",
+        "consulting agency",
+        "dedicated",
+        "empowering",
+        "businesses",
+        "innovative technology",
+        "digital transformation",
+        "team",
+        "highly skilled",
+        "experienced professionals",
+        "tailor-made solutions",
+        "drive growth",
+        "efficiency",
+        "Web Development",
+        "Mobile Application Development",
+        "Custom Software Solutions",
+    ],
+    publisher: "Abdellatif Mkaref Temsamani",
+    category: "consulting, web development, mobile applications",
+    icons: {
+        icon: "/images/icons/ad.svg",
+        shortcut: "/images/icons/ad.svg",
+        apple: "/images/icons/ad.svg",
+    },
 };
 
 export default function RootLayout({
