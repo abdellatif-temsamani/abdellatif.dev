@@ -1,6 +1,6 @@
 .link {
     @apply font-bold;
-    @apply text-xl;
+    @apply text-xl md:text-base;
 }
 
 .link:after {
