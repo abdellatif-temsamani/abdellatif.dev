@@ -54,3 +54,38 @@ main {
 a {
     @apply text-sky-900;
 }
+
+@layer base {
+    html {
+        @apply scroll-smooth;
+    }
+
+    h1 {
+        @apply text-2xl font-extrabold sm:text-4xl;
+    }
+}
+
+@layer components {
+    .nav-menu {
+        @apply hidden peer-checked:flex md:flex;
+        @apply gap-6 flex-col md:flex-row;
+        @apply py-6 px-8 md:px-0 md:py-0;
+        @apply absolute md:relative;
+        @apply md:w-auto md:top-auto;
+        @apply top-[85px] right-0 md:top-0 md:left-0;
+        @apply w-full md:w-auto;
+        text-align: left;
+        @apply border-sky-950 border-b-4 md:border-0;
+        @apply transition-all;
+    }
+
+    @media (max-width: 1024px) {
+        .nav-menu {
+            background-image: url("/images/effects/grainy.png"),
+                url("/images/effects/patterns.png");
+            background-size: 100%;
+            background-repeat: repeat;
+            @apply bg-sky-100;
+        }
+    }
+}
