@@ -2,7 +2,6 @@
 
 import Button from "@/app/(components)/(shared)/(button)";
 import { WithImage } from "@/app/(components)/(shared)/(section)/withImage";
-import H1 from "@/app/(components)/(shared)/(title)/H1";
 
 /**
  * Hero component (home page)
@@ -12,7 +11,7 @@ import H1 from "@/app/(components)/(shared)/(title)/H1";
 export default function Hero(): JSX.Element {
     return (
         <WithImage image="/images/hero.svg" alt="Hero">
-            <H1>Welcome To Abdellatif Dev - Empower Your Digital Success</H1>
+            <h1>Welcome To Abdellatif Dev - Empower Your Digital Success</h1>
 
             <div className="flex flex-col gap-8 lg:gap-4">
                 <p>

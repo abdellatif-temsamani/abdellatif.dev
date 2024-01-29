@@ -1,7 +1,6 @@
 "use client";
 
 import { WithImage } from "@/app/(components)/(shared)/(section)/withImage";
-import H1 from "@/app/(components)/(shared)/(title)/H1";
 
 /**
  * InnovaTech component (home page)
@@ -11,7 +10,7 @@ import H1 from "@/app/(components)/(shared)/(title)/H1";
 export default function InnovaTech(): JSX.Element {
     return (
         <WithImage image="/images/books.svg" alt="Hero" hideOnMobile={true}>
-            <H1>Empowering Businesses with custom Software Solutions</H1>
+            <h1>Empowering Businesses with custom Software Solutions</h1>
 
             <p>
                 At Abdellatif Dev, We specialize in create custom software solution that
