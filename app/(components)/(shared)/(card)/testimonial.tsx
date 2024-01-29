@@ -27,7 +27,7 @@ export default function TestimonialCard({
     testimonial,
 }: Readonly<TestimonialCardProps>) {
     return (
-        <div key={key} className="flex flex-col gap-6 md:gap-4 p-8">
+        <div key={key} className="flex flex-col gap-6 p-8 md:gap-4">
             <Stars rating={testimonial.stars} />
             <div>
                 <svg
@@ -49,28 +49,16 @@ export default function TestimonialCard({
             </div>
 
             <p className="font-bold">{testimonial.quote}</p>
-            <div className="flex flex-col gap-6 md:justify-between md:items-center lg:flex-row">
-                <div className="flex flex-col gap-6 md:items-center lg:flex-row lg:gap-2">
-                    {testimonial.user.avatar && (
-                        <Image
-                            className="rounded-2xl"
-                            src={testimonial.user.avatar}
-                            alt={testimonial.user.name}
-                            width={80}
-                            height={80}
-                        />
-                    )}
-                    <div className="flex flex-col gap-1 ml-2">
-                        <Link href={testimonial.user.linkedin} target="_blank">
-                            <p className="font-bold">{testimonial.user.name}</p>
-                        </Link>
-                        <p>
-                            {testimonial.user.role},{" "}
-                            {testimonial.user.company.name}
-                        </p>
-                    </div>
-                </div>
-
+            <div className="flex gap-6 md:items-center">
+                <Link href={testimonial.user.company.linkedin} target="_blank">
+                    <Image
+                        className="w-full h-auto"
+                        src={testimonial.user.company.logo}
+                        alt={testimonial.user.company.name}
+                        width={testimonial.user.company.imageSize}
+                        height={testimonial.user.company.imageSize}
+                    />
+                </Link>
                 <svg
                     className="hidden h-20 lg:block"
                     width="4"
@@ -88,14 +76,17 @@ export default function TestimonialCard({
                     />
                 </svg>
 
-                <Link href={testimonial.user.company.linkedin} target="_blank">
-                    <Image
-                        src={testimonial.user.company.logo}
-                        alt={testimonial.user.company.name}
-                        width={testimonial.user.company.imageSize}
-                        height={testimonial.user.company.imageSize}
-                    />
-                </Link>
+                <div className="flex flex-col gap-6 md:items-center lg:flex-row lg:gap-2">
+                    <div className="flex flex-col gap-1 ml-2">
+                        <Link href={testimonial.user.linkedin} target="_blank">
+                            <p className="font-bold">{testimonial.user.name}</p>
+                        </Link>
+                        <p>
+                            {testimonial.user.role},{" "}
+                            {testimonial.user.company.name}
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );

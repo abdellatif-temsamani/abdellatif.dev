@@ -24,7 +24,6 @@ type Company = {
  */
 type Client = {
     name: string;
-    avatar: `/images/clients/avatars/${string}`| null;
     linkedin: `https://www.linkedin.com/in/${string}/`;
     role: string;
     company: Company;
@@ -59,7 +58,6 @@ export const testimonials: Testimonial[] = [
         quote: "Working with Abdellatif was a good experience. He is a software developer who consistently delivers high-quality code. Abdellatif is a reliable team player, always willing to lend a hand and share his expertise.",
         user: {
             name: "Noura TAKI",
-            avatar: null,
             linkedin: "https://www.linkedin.com/in/noura-taki-46b6a1166/",
             role: "Project Manager",
             company: {
