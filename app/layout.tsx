@@ -28,15 +28,6 @@ export const metadata: Metadata = {
         description: "Empower Your Digital Success",
         url: new URL("https://www.abdellatif.dev/"),
     },
-    twitter: {
-        card: "app",
-        app: {
-            id: {
-                iphone: "Abdellatif Dev",
-                googleplay: "Abdellatif Dev",
-            },
-        },
-    },
     metadataBase: new URL("https://www.abdellatif.dev/"),
     keywords: [
         "Abdellatif Dev",
