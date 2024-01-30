@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import { socials } from "@/lib/socials";
 
-import SocialIcon from "../(shared)/(socialIcon)";
+import SocialIcon from "../shared/socialIcon";
 
 export default function Info() {
     return (

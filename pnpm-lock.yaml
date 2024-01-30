@@ -9,16 +9,16 @@ dependencies:
     specifier: ^1.1.2
     version: 1.1.2
   '@vercel/speed-insights':
-    specifier: ^1.0.8
-    version: 1.0.8(next@14.1.0)(react@18.2.0)
+    specifier: ^1.0.9
+    version: 1.0.9(next@14.1.0)(react@18.2.0)
   next:
     specifier: 14.1.0
     version: 14.1.0(react-dom@18.2.0)(react@18.2.0)
   react:
-    specifier: ^18.2.0
+    specifier: ^18
     version: 18.2.0
   react-dom:
-    specifier: ^18.2.0
+    specifier: ^18
     version: 18.2.0(react@18.2.0)
   react-icons:
     specifier: ^5.0.1
@@ -26,13 +26,13 @@ dependencies:
 
 devDependencies:
   '@types/node':
-    specifier: ^20.11.10
+    specifier: ^20
     version: 20.11.10
   '@types/react':
-    specifier: ^18.2.48
+    specifier: ^18
     version: 18.2.48
   '@types/react-dom':
-    specifier: ^18.2.18
+    specifier: ^18
     version: 18.2.18
   '@typescript-eslint/eslint-plugin':
     specifier: ^6.20.0
@@ -44,10 +44,10 @@ devDependencies:
     specifier: ^10.4.17
     version: 10.4.17(postcss@8.4.33)
   eslint:
-    specifier: 8.56.0
+    specifier: ^8
     version: 8.56.0
   eslint-config-next:
-    specifier: ^14.1.0
+    specifier: 14.1.0
     version: 14.1.0(eslint@8.56.0)(typescript@5.3.3)
   eslint-plugin-react:
     specifier: ^7.33.2
@@ -56,13 +56,13 @@ devDependencies:
     specifier: ^10.0.0
     version: 10.0.0(eslint@8.56.0)
   postcss:
-    specifier: ^8.4.33
+    specifier: ^8
     version: 8.4.33
   tailwindcss:
-    specifier: ^3.4.1
+    specifier: ^3.3.0
     version: 3.4.1
   typescript:
-    specifier: ^5.3.3
+    specifier: ^5
     version: 5.3.3
 
 packages:
@@ -494,8 +494,8 @@ packages:
       server-only: 0.0.1
     dev: false
 
-  /@vercel/speed-insights@1.0.8(next@14.1.0)(react@18.2.0):
-    resolution: {integrity: sha512-x1V9MHUMGkaNafmgY0qRbmbr+jfeU+Cvo5KgreeEGo63SFuBYRg9RS52GUJ9p82nEL6NBzc9HNru6fkcvufYcQ==}
+  /@vercel/speed-insights@1.0.9(next@14.1.0)(react@18.2.0):
+    resolution: {integrity: sha512-f+XFP0O+aZ4Olj9h+BitkB1b4NJQaxtyCb69wWuDxytJHY6Pa4QtZPdBUftHOcajUCHRVeq062fk3MKXKtjNVQ==}
     requiresBuild: true
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
@@ -747,7 +747,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001581
-      electron-to-chromium: 1.4.649
+      electron-to-chromium: 1.4.650
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.3)
     dev: true
@@ -933,8 +933,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium@1.4.649:
-    resolution: {integrity: sha512-dq/owIaALxZGqWm5RXpKQ4baX6aDC19e2Z16c8SXYN+I71PyEKjbVqQUgm7kcuk8CRqljTKXbolo0XXDjxnh2w==}
+  /electron-to-chromium@1.4.650:
+    resolution: {integrity: sha512-sYSQhJCJa4aGA1wYol5cMQgekDBlbVfTRavlGZVr3WZpDdOPcp6a6xUnFfrt8TqZhsBYYbDxJZCjGfHuGupCRQ==}
     dev: true
 
   /emoji-regex@8.0.0:

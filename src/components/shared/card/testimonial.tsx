@@ -2,9 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { Key } from "react";
 
+import Stars from "@/components/shared/rating/stars";
 import { Testimonial } from "@/lib/testimonial";
-
-import Stars from "../(rating)/stars";
 
 /**
  * @type {TestimonialCardProps}
