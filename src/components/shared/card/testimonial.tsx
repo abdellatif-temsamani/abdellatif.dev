@@ -12,7 +12,7 @@ import { Testimonial } from "@/lib/testimonial";
  * @property testimonial
  */
 type TestimonialCardProps = {
-    key: Key | null | undefined;
+    key: Key;
     testimonial: Testimonial;
 };
 
@@ -27,7 +27,7 @@ export default function TestimonialCard({
 }: Readonly<TestimonialCardProps>) {
     return (
         <div key={key} className="flex flex-col gap-6 p-8 md:gap-4">
-            <Stars rating={testimonial.stars} />
+            <Stars rating={testimonial.stars} key={testimonial.user.name} />
             <div>
                 <svg
                     className="w-1/3"

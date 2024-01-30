@@ -4,7 +4,7 @@ import { Key } from "react";
 import { Social } from "@/lib/socials";
 
 type SocialProps = {
-    key: Key | null | undefined;
+    key: Key;
     social: Social;
 };
 
