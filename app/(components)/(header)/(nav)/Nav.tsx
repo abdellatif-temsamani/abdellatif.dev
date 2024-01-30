@@ -3,8 +3,6 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
 import { type NavLinkProp, navLinks } from "@/lib/routes";
 
-import Styles from "./Nav.module.css";
-
 /**
  * Nav component
  *
@@ -22,14 +20,18 @@ export default function Nav(): JSX.Element {
             </label>
             <label
                 htmlFor="mobile-menu"
-                className="hidden cursor-pointer md:peer-checked:hidden peer-checked:block"
+                className="hidden cursor-pointer peer-checked:block md:peer-checked:hidden"
             >
                 <FaChevronUp size={32} />
             </label>
 
             <nav className="nav-menu">
                 {navLinks.map((navLink: NavLinkProp) => (
-                    <Link key={navLink.title} className={Styles.link} href={navLink.href}>
+                    <Link
+                        key={navLink.title}
+                        className="link"
+                        href={navLink.href}
+                    >
                         {navLink.title}
                     </Link>
                 ))}
