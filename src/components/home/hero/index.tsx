@@ -1,7 +1,7 @@
 "use client";
 
-import Button from "@/app/(components)/(shared)/(button)";
-import { WithImage } from "@/app/(components)/(shared)/(section)/withImage";
+import Button from "@/components/shared/button";
+import { WithImage } from "@/components/shared/section/withImage";
 
 /**
  * Hero component (home page)
@@ -15,13 +15,18 @@ export default function Hero(): JSX.Element {
 
             <div className="flex flex-col gap-8 lg:gap-4">
                 <p>
-                    At Abdellatif Dev, we are passionate about turning your ideas into
-                    reality. Our experienced software developers are dedicated to helping
-                    your business reach new heights with innovative technology.
+                    At Abdellatif Dev, we are passionate about turning your
+                    ideas into reality. Our experienced software developers are
+                    dedicated to helping your business reach new heights with
+                    innovative technology.
                 </p>
                 <div className="flex flex-col gap-6 sm:flex-row">
                     <Button text="Get Started" onClick={() => { }} />
-                    <Button text="Contact Us" onClick={() => { }} primary={false} />
+                    <Button
+                        text="Contact Us"
+                        onClick={() => { }}
+                        primary={false}
+                    />
                 </div>
             </div>
         </WithImage>

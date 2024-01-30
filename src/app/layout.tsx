@@ -1,12 +1,12 @@
-import "@/app/globals.css";
+import "./globals.css";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Viewport } from "next";
 import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 
-import Footer from "./(components)/(footer)";
-import Header from "./(components)/(header)";
+import Footer from "@/components/footer";
+import Header from "@/components/header";
 
 const sora = Sora({
     subsets: ["latin"],
