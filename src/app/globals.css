@@ -116,6 +116,10 @@ a {
 
     ::-webkit-scrollbar-track {
         @apply bg-sky-100;
+        background-image: url("/images/effects/grainy.png"),
+            url("/images/effects/patterns.png");
+        background-size: 100%;
+        background-repeat: repeat;
     }
 
     ::-webkit-scrollbar-thumb {
