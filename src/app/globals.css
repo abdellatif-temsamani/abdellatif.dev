@@ -57,7 +57,7 @@ a {
 
 @layer base {
     html {
-        @apply scroll-smooth;
+        @apply snap-mandatory;
     }
 
     h1 {
@@ -106,5 +106,19 @@ a {
 
     .link:hover:after {
         width: 100%;
+    }
+}
+
+@layer utilities {
+    ::-webkit-scrollbar {
+        @apply w-4;
+    }
+
+    ::-webkit-scrollbar-track {
+        @apply bg-sky-100;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-sky-400;
     }
 }

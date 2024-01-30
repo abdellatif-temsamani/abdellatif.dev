@@ -5,7 +5,7 @@
 export type Feature = {
     title: string;
     description: string;
-    link: `/features/${string}` | "";
+    link: `/features/${string}`;
 };
 
 /**

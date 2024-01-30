@@ -11,7 +11,7 @@ import { Feature } from "@/lib/features";
  * @property  cardInfo
  */
 type CardProps = {
-    key: Key | null | undefined;
+    key: Key;
     cardInfo: Feature;
 };
 
