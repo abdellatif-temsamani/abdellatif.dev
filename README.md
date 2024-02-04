@@ -40,7 +40,7 @@ engineering and development trends.
 
 # LICENSE
 
-[GNU AFFERO GENERAL PUBLIC LICENSE V3](LICENSE) ©
+[GNU GENERAL PUBLIC LICENSE V3](LICENSE) ©
 [Abdellatif Dev](https://abdellatif.dev)
 
 # Contributing
