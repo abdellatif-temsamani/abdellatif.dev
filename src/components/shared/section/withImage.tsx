@@ -1,4 +1,5 @@
 "use client";
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
 /**
@@ -10,7 +11,7 @@ import Image from "next/image";
  * @property children
  */
 type withImageProps = {
-    image: string;
+    image: string | StaticImport;
     alt: string;
     hideOnMobile?: boolean;
     children: React.ReactNode;
