@@ -32,6 +32,7 @@ body {
 
 main {
     margin: 40px 32px 0 32px;
+    @apply flex flex-col gap-28;
 }
 
 @media (min-width: 1024px) {

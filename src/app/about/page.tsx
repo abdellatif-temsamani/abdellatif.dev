@@ -1,7 +1,11 @@
-export default function Home() {
+import { Hero, Statement, Trusted } from "@/components/pages/about";
+
+export default function About() {
     return (
         <main>
-            <div className="flex flex-col gap-28"></div>
+            <Hero />
+            <Statement />
+            <Trusted />
         </main>
     );
 }

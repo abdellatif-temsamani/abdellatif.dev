@@ -1,3 +1,5 @@
+import BooksSvg from "@public/images/books.svg";
+
 import { WithImage } from "@/components/shared/section/withImage";
 
 /**
@@ -7,7 +9,7 @@ import { WithImage } from "@/components/shared/section/withImage";
  */
 export default function InnovaTech(): JSX.Element {
     return (
-        <WithImage image="/images/books.svg" alt="Hero" hideOnMobile={true}>
+        <WithImage image={BooksSvg} alt="Hero" hideOnMobile={true}>
             <h1>Empowering Businesses with custom Software Solutions</h1>
 
             <p>
