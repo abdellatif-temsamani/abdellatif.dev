@@ -21,7 +21,8 @@ export default function Logo() {
                     <span className="text-sky-400">D</span>ev
                 </h1>
                 <p className="text-sm 2xl:text-xl">
-                    <span className="font-extrabold">Empower</span> Your Digital Success
+                    <span className="font-extrabold">Empower</span> Your Digital
+                    Success
                 </p>
             </div>
         </div>
