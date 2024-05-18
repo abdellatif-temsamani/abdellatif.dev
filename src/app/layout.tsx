@@ -1,8 +1,7 @@
 import "./globals.css";
 
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import type { Viewport } from "next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Sora } from "next/font/google";
 
 import Footer from "@/components/footer";
@@ -61,11 +60,11 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={sora.className}>
-                <SpeedInsights />
                 <div id="grainy">
                     <Header />
                     {children}
                     <Footer />
+                    <SpeedInsights />
                 </div>
             </body>
         </html>
