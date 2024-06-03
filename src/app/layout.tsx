@@ -60,12 +60,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={sora.className}>
-                <div id="grainy">
-                    <Header />
-                    {children}
-                    <Footer />
-                    <SpeedInsights />
-                </div>
+                <Header />
+                {children}
+                <Footer />
+                <SpeedInsights />
             </body>
         </html>
     );
