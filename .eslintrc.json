@@ -3,7 +3,6 @@
         "browser": true,
         "es2021": true
     },
-    "extends": "next/core-web-vitals",
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaVersion": "latest",
@@ -15,6 +14,8 @@
         "simple-import-sort"
     ],
     "rules": {
+        "react/jsx-uses-react": "off",
+        "react/react-in-jsx-scope": "off",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
         "indent": [
