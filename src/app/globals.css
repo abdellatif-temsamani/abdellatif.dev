@@ -12,8 +12,19 @@
     /* border: 1px solid red; */
 }
 
+html {
+    @apply from-sky-50;
+    @apply to-sky-200;
+    @apply bg-gradient-to-b;
+    @apply flex flex-col gap-28;
+}
+
 body {
     @apply min-h-screen;
+
+    background-image: url("/images/effects/grainy.png");
+    background-size: 100%;
+    background-repeat: repeat;
 }
 
 #waves {
@@ -23,33 +34,15 @@ body {
     background-repeat: repeat;
 }
 
-#grainy {
-    z-index: 1;
-}
-
 main {
-    margin: 40px 32px 0 32px;
-    @apply from-sky-50;
-    @apply to-sky-200;
-    @apply bg-gradient-to-b;
-    @apply flex flex-col gap-28;
+    padding: 40px 32px 0 32px;
+    @apply flex flex-col gap-32;
 }
 
 @media (min-width: 1024px) {
     main {
-        margin: 80px 64px 0 64px;
+        padding: 80px 64px 80px 64px;
     }
-}
-
-#grainy::before {
-    content: "";
-    position: fixed;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-image: url("/images/effects/grainy.png");
 }
 
 a {
@@ -83,7 +76,6 @@ a {
         @apply md:w-auto md:top-auto;
         @apply top-[85px] right-0 md:top-0 md:left-0;
         @apply w-full md:w-auto;
-        text-align: left;
         @apply border-sky-950 border-b-4 md:border-0;
         @apply transition-all;
     }
@@ -120,18 +112,14 @@ a {
 
 @layer utilities {
     ::-webkit-scrollbar {
-        @apply w-4;
+        @apply w-2;
     }
 
     ::-webkit-scrollbar-track {
         @apply bg-sky-100;
-        background-image: url("/images/effects/grainy.png"),
-            url("/images/effects/patterns.png");
-        background-size: 100%;
-        background-repeat: repeat;
     }
 
     ::-webkit-scrollbar-thumb {
-        @apply bg-sky-400;
+        @apply bg-sky-950;
     }
 }

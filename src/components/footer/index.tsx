@@ -10,7 +10,7 @@ import Logo from "./Logo";
 export default function Footer(): JSX.Element {
     return (
         <footer
-            className="flex flex-col gap-7 px-10 pt-16 pb-8 mt-32 md:px-32 bg-sky-200"
+            className="flex flex-col gap-7 px-10 pt-16 pb-8 md:px-32 bg-sky-200"
             id="waves"
         >
             <Logo />
@@ -24,7 +24,14 @@ export default function Footer(): JSX.Element {
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <title>line</title>
-                <line x1={0} y1={0} x2="100%" y2={0} stroke="#082F49" strokeWidth="4" />
+                <line
+                    x1={0}
+                    y1={0}
+                    x2="100%"
+                    y2={0}
+                    stroke="#082F49"
+                    strokeWidth="4"
+                />
             </svg>
             <CopyRight />
         </footer>
