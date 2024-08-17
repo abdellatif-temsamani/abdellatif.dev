@@ -16,12 +16,12 @@ export type Social = {
 export const socials: Social[] = [
     {
         title: "Github",
-        link: "https://github.com/abdellatif-temsamani",
+        link: "https://github.com/abdellatifdev-1/",
         icon: FaGithub,
     },
     {
         title: "LinkedIn",
-        link: "https://www.linkedin.com/in/abdellatif-m-399999225/",
+        link: "https://www.linkedin.com/company/abdellatif-dev",
         icon: FaLinkedin,
     },
     {
