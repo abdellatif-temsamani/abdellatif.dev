@@ -6,8 +6,8 @@ export default function Policy() {
                 <h3>Introduction</h3>
                 <p>
                     Our privacy policy will help you understand what information
-                    we collect at abdellatif dev, how QR Code Scanner uses it,
-                    and what choices you have. QR Code Scanner built the QR Code
+                    we collect at abdellatif dev, how abdellatif dev uses it,
+                    and what choices you have. abdellatif dev built the QR Code
                     Scanner app as a free app. This SERVICE is provided by QR
                     Code Scanner at no cost and is intended for use as is. If
                     you choose to use our Service, then you agree to the
