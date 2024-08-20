@@ -8,7 +8,7 @@ export default function CopyRight() {
             </p>
             <ul className="flex flex-col gap-4 sm:flex-row">
                 <li>
-                    <Link href="/copyright">Copyright Policy</Link>
+                    <Link href="/policy">Policy</Link>
                 </li>
                 <li>
                     <Link href="/terms">Terms Of Service</Link>
