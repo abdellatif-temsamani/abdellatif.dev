@@ -29,7 +29,7 @@ export default function Statement(): JSX.Element {
                         <Button>Services</Button>
                     </Link>
                     <Link href="/case-studies">
-                        <Button primary={false}>Case Studies</Button>
+                        <Button color="secondary">Case Studies</Button>
                     </Link>
                 </div>
             </div>

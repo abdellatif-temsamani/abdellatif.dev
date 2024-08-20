@@ -1,28 +1,56 @@
+"use client";
+import { useFormState, useFormStatus } from "react-dom";
+
 import Button from "@/components/shared/button";
-import { getDeleteDataBody, sendEmail } from "@/lib/emailer";
+
+import { sendRequest } from "./actions";
+
+const initialState = {
+    message: "",
+};
+
+function SubmitButton() {
+    const { pending } = useFormStatus();
+    return (
+        <Button disabled={pending} type="submit">
+            Send
+        </Button>
+    );
+}
 
 export default function Detele() {
-    async function sendRequest(formData: FormData) {
-        "use server";
-        const email = formData.get("email") as string;
-        const body = getDeleteDataBody(email);
-        await sendEmail(body);
-    }
-
+    const [state, formAction] = useFormState(sendRequest, initialState);
+    const apps = ["Vidange 360"];
     return (
-        <main className="flex flex-col gap-8 justify-center items-center py-2 min-h-screen text-center">
-            <form className="flex flex-col gap-8" action={sendRequest}>
+        <main className="flex flex-col justify-center items-center h-70">
+            <form className="flex flex-col gap-8" action={formAction}>
                 <h1 className="text-lg font-bold lg:text-4xl">
                     request deleting your data
                 </h1>
                 <input
+                    required
                     name="email"
                     id="email"
                     type="text"
                     placeholder="email"
-                    className="p-4 border-2 placeholder:text-sky-600 border-sky-400"
+                    className="p-4 border-2 bg-sky-50 placeholder:text-sky-600 border-sky-400"
                 />
-                <Button type="submit">Send</Button>
+
+                <select
+                    required
+                    id="app"
+                    name="app"
+                    className="p-4 border-2 bg-sky-50 placeholder:text-sky-600 border-sky-400"
+                >
+                    <option value="">Select an app</option>
+                    {apps.map((app) => (
+                        <option value={app}>{app}</option>
+                    ))}
+                </select>
+                <SubmitButton />
+                <h2 className="text-lg font-bold lg:text- xl">
+                    {state?.message}
+                </h2>
             </form>
         </main>
     );

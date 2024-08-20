@@ -21,21 +21,21 @@ function getEmailInstance(): nodemailer.Transporter<SMTPTransport.SentMessageInf
     });
 }
 
-export function getDeleteDataBody(email: string): body {
+export function getDeleteDataBody(email: string, app: string): body {
     const text = `Dear Abdellatif dev
-        I request delete all my data with the following email
-         ${email}`;
+        I request delete all my data for the app ${app}
+        with the following email ${email}`;
 
     const html = `<h1>Dear Abdellatif dev</h1>
     <p>
-        I request delete all my data with the following email
-        <b>${email}</b> <br />
+        I request delete all my data for the app <b>${app}</b>
+        with the following email <b>${email}</b> <br />
     </p>`;
 
     return {
         from: "web@abdellatif.dev",
         to: "contact@abdellatif.dev",
-        subject: "Vidange 360: inscription complète",
+        subject: `${app}: request to delete data`,
         text: text,
         html: html,
     };
