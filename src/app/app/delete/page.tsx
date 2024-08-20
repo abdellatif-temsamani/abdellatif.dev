@@ -22,8 +22,8 @@ export default function Detele() {
     const [state, formAction] = useFormState(sendRequest, initialState);
     const apps = ["Vidange 360"];
     return (
-        <main className="flex flex-col justify-center items-center h-70">
-            <form className="flex flex-col gap-8" action={formAction}>
+        <main className="flex flex-col justify-center items-center min-h-dvh">
+            <form className="flex flex-col gap-16" action={formAction}>
                 <h1 className="text-lg font-bold lg:text-4xl">
                     request deleting your data
                 </h1>
