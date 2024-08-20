@@ -26,7 +26,7 @@ export default function Hero(): JSX.Element {
                         <Button>Get Started</Button>
                     </Link>
                     <Link href="/contact">
-                        <Button primary={false}>Contact Us</Button>
+                        <Button color="secondary">Contact Us</Button>
                     </Link>
                 </div>
             </div>
