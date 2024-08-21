@@ -25,7 +25,11 @@ export default function Info() {
 
                 <div className="flex gap-4">
                     {socials.map((social) => {
-                        return <SocialIcon social={social} />;
+                        return (
+                            <div key={social.title}>
+                                <SocialIcon social={social} />;
+                            </div>
+                        );
                     })}
                 </div>
             </ul>

@@ -17,9 +17,9 @@ export default function Features(): JSX.Element {
             <div className="flex flex-col gap-14 justify-between lg:flex-row">
                 {features.map((feature: Feature) => {
                     return (
-                        <Card
-                            cardInfo={feature}
-                        />
+                        <div key={feature.link}>
+                            <Card cardInfo={feature} />
+                        </div>
                     );
                 })}
             </div>

@@ -19,9 +19,9 @@ export default function Testimonials(): JSX.Element {
             <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
                 {testimonials.map((testimonial) => {
                     return (
-                        <TestimonialCard
-                            testimonial={testimonial}
-                        />
+                        <div key={testimonial.user.name}>
+                            <TestimonialCard testimonial={testimonial} />
+                        </div>
                     );
                 })}
             </div>

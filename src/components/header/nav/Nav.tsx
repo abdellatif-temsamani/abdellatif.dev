@@ -27,9 +27,11 @@ export default function Nav(): JSX.Element {
 
             <div className="nav-menu">
                 {navLinks.map((navLink: NavLinkProp) => (
-                    <Link className="link" href={navLink.href}>
-                        {navLink.title}
-                    </Link>
+                    <div key={navLink.href}>
+                        <Link className="link" href={navLink.href}>
+                            {navLink.title}
+                        </Link>
+                    </div>
                 ))}
             </div>
         </>

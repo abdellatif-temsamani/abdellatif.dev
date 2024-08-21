@@ -16,7 +16,9 @@ export default function Trusted(): JSX.Element {
             </h1>
             <div className="flex flex-wrap gap-16 w-full md:w-auto">
                 {trustedClients.map((logo: StaticImageData) => (
-                    <Image alt={logo.src} src={logo} />
+                    <div key={logo.src}>
+                        <Image alt={logo.src} src={logo} />
+                    </div>
                 ))}
             </div>
         </div>

@@ -24,10 +24,10 @@ export default function Detele() {
     return (
         <main>
             <form
-                className="flex lg:mx-72 flex-col gap-10 items-center"
+                className="flex flex-col gap-10 items-center lg:mx-72"
                 action={formAction}
             >
-                <h1 className="text-lg mb-10 font-bold lg:text-4xl">
+                <h1 className="mb-10 text-lg font-bold lg:text-4xl">
                     request deleting your data
                 </h1>
                 <input
@@ -41,8 +41,10 @@ export default function Detele() {
 
                 <select required className="w-full" id="app" name="app">
                     <option value="">Select an app</option>
-                    {apps.map((app) => (
-                        <option value={app}>{app}</option>
+                    {apps.map((app, index) => (
+                        <div key={index}>
+                            <option value={app}>{app}</option>
+                        </div>
                     ))}
                 </select>
                 <SubmitButton />
