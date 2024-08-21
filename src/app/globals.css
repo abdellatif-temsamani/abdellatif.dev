@@ -58,6 +58,26 @@
         @apply text-lg font-extrabold sm:text-xl;
     }
 
+    input {
+        @apply p-4;
+        @apply border-2;
+        @apply border-sky-900;
+        @apply bg-sky-50;
+        @apply placeholder:text-sky-800;
+    }
+
+    select {
+        @apply p-4;
+        @apply border-2;
+        @apply border-sky-900;
+        @apply bg-sky-50;
+        @apply text-sky-800;
+    }
+
+    select option {
+        @apply text-sky-800;
+    }
+
     @media (min-width: 1024px) {
         main {
             padding: 80px 64px 80px 64px;
@@ -105,6 +125,11 @@
 
     .link:hover:after {
         width: 100%;
+    }
+
+    .laptop-flex {
+        @apply flex justify-between;
+        @apply flex-col lg:flex-row;
     }
 }
 

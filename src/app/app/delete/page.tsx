@@ -12,7 +12,7 @@ const initialState = {
 function SubmitButton() {
     const { pending } = useFormStatus();
     return (
-        <Button disabled={pending} type="submit">
+        <Button width="half" disabled={pending} type="submit">
             Send
         </Button>
     );
@@ -22,9 +22,12 @@ export default function Detele() {
     const [state, formAction] = useFormState(sendRequest, initialState);
     const apps = ["Vidange 360"];
     return (
-        <main className="flex flex-col justify-center items-center min-h-dvh">
-            <form className="flex flex-col gap-16" action={formAction}>
-                <h1 className="text-lg font-bold lg:text-4xl">
+        <main>
+            <form
+                className="flex lg:mx-72 flex-col gap-10 items-center"
+                action={formAction}
+            >
+                <h1 className="text-lg mb-10 font-bold lg:text-4xl">
                     request deleting your data
                 </h1>
                 <input
@@ -32,16 +35,11 @@ export default function Detele() {
                     name="email"
                     id="email"
                     type="text"
+                    className="w-full"
                     placeholder="email"
-                    className="p-4 border-2 bg-sky-50 placeholder:text-sky-600 border-sky-400"
                 />
 
-                <select
-                    required
-                    id="app"
-                    name="app"
-                    className="p-4 border-2 bg-sky-50 placeholder:text-sky-600 border-sky-400"
-                >
+                <select required className="w-full" id="app" name="app">
                     <option value="">Select an app</option>
                     {apps.map((app) => (
                         <option value={app}>{app}</option>
