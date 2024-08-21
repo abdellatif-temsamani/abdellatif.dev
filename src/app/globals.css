@@ -98,16 +98,6 @@
         @apply transition-all;
     }
 
-    @media (max-width: 1024px) {
-        .nav-menu {
-            background-image: url("/images/effects/grainy.png"),
-                url("/images/effects/patterns.png");
-            background-size: 100%;
-            background-repeat: repeat;
-            @apply bg-sky-100;
-        }
-    }
-
     .link {
         @apply font-bold;
         @apply text-xl md:text-base;
@@ -130,6 +120,16 @@
     .laptop-flex {
         @apply flex justify-between;
         @apply flex-col lg:flex-row;
+    }
+
+    @media (max-width: 1024px) {
+        .nav-menu {
+            background-image: url("/images/effects/grainy.png"),
+                url("/images/effects/patterns.png");
+            background-size: 100%;
+            background-repeat: repeat;
+            @apply bg-sky-100;
+        }
     }
 }
 

@@ -18,7 +18,6 @@ export default function Features(): JSX.Element {
                 {features.map((feature: Feature) => {
                     return (
                         <Card
-                            key={feature.link}
                             cardInfo={feature}
                         />
                     );

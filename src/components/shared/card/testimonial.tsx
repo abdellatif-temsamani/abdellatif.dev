@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Key } from "react";
 
 import Stars from "@/components/shared/rating/stars";
 import { Testimonial } from "@/lib/testimonial";
@@ -8,11 +7,9 @@ import { Testimonial } from "@/lib/testimonial";
 /**
  * @type {TestimonialCardProps}
  *
- * @property key
  * @property testimonial
  */
 type TestimonialCardProps = {
-    key: Key;
     testimonial: Testimonial;
 };
 
@@ -22,12 +19,11 @@ type TestimonialCardProps = {
  * @param {TestimonialCardProps}
  */
 export default function TestimonialCard({
-    key,
     testimonial,
 }: Readonly<TestimonialCardProps>) {
     return (
-        <div key={key} className="flex flex-col gap-6 p-8 md:gap-4">
-            <Stars rating={testimonial.stars} key={testimonial.user.name} />
+        <div className="flex flex-col gap-6 p-8 md:gap-4">
+            <Stars rating={testimonial.stars} />
             <div>
                 <svg
                     className="w-1/3"

@@ -19,12 +19,13 @@ export default function Info() {
                     </Link>
                 </li>
                 <li>
-                    <b>Phone:</b> <Link href="tel:+212617361610">+212 6 17 36 16 10</Link>
+                    <b>Phone:</b>{" "}
+                    <Link href="tel:+212617361610">+212 6 17 36 16 10</Link>
                 </li>
 
                 <div className="flex gap-4">
                     {socials.map((social) => {
-                        return <SocialIcon key={social.title} social={social} />;
+                        return <SocialIcon social={social} />;
                     })}
                 </div>
             </ul>

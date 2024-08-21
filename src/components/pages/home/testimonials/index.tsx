@@ -21,7 +21,6 @@ export default function Testimonials(): JSX.Element {
                     return (
                         <TestimonialCard
                             testimonial={testimonial}
-                            key={testimonial.user.name}
                         />
                     );
                 })}

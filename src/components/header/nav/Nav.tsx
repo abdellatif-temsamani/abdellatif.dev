@@ -25,17 +25,13 @@ export default function Nav(): JSX.Element {
                 <FaChevronUp size={32} />
             </label>
 
-            <nav className="nav-menu">
+            <div className="nav-menu">
                 {navLinks.map((navLink: NavLinkProp) => (
-                    <Link
-                        key={navLink.title}
-                        className="link"
-                        href={navLink.href}
-                    >
+                    <Link className="link" href={navLink.href}>
                         {navLink.title}
                     </Link>
                 ))}
-            </nav>
+            </div>
         </>
     );
 }
