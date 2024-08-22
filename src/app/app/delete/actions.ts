@@ -23,11 +23,18 @@ function getDeleteDataBody(email: string, app: string): body {
 
 export async function sendRequest(_prevState: any, formData: FormData) {
     try {
-        const email = formData.get("email") as string;
-        const app = formData.get("app") as string;
-        const body = getDeleteDataBody(email, app);
-        await sendEmail(body);
-        return { message: "Your request will be handled in the next 24 hours" };
+        const email = formData.get("email");
+        const app = formData.get("app");
+
+        if (email !== null && app !== null) {
+            const body = getDeleteDataBody(email.toString(), app.toString());
+            await sendEmail(body);
+            return {
+                message: "Your request will be handled in the next 24 hours",
+            };
+        } else {
+            return { message: "error while sending the request" };
+        }
     } catch {
         return { message: "error while sending the request" };
     }

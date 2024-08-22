@@ -10,7 +10,7 @@ import Logo from "./Logo";
 export default function Footer(): JSX.Element {
     return (
         <footer
-            className="flex flex-col gap-7 px-10 pt-16 pb-8 md:px-32 bg-sky-200"
+            className="flex flex-col gap-7 px-10 pt-16 pb-8 mt-28 md:px-32 bg-sky-200"
             id="waves"
         >
             <Logo />

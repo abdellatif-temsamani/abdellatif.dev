@@ -58,12 +58,18 @@
         @apply text-lg font-extrabold sm:text-xl;
     }
 
+    textarea,
     input {
         @apply p-4;
         @apply border-2;
         @apply border-sky-900;
         @apply bg-sky-50;
         @apply placeholder:text-sky-800;
+    }
+
+    textarea {
+        @apply py-2;
+        @apply h-40;
     }
 
     select {

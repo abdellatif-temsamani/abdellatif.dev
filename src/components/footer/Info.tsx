@@ -27,7 +27,7 @@ export default function Info() {
                     {socials.map((social) => {
                         return (
                             <div key={social.title}>
-                                <SocialIcon social={social} />;
+                                <SocialIcon social={social} />
                             </div>
                         );
                     })}

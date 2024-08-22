@@ -1,8 +1,9 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useState } from "react";
+import { useFormState } from "react-dom";
 
-import Button from "@/components/shared/button";
+import SubmitButton from "@/components/shared/button/submitButton";
 
 import { sendRequest } from "./actions";
 
@@ -10,27 +11,14 @@ const initialState = {
     message: "",
 };
 
-function SubmitButton() {
-    const { pending } = useFormStatus();
-    return (
-        <Button width="half" disabled={pending} type="submit">
-            Send
-        </Button>
-    );
-}
-
-export default function Detele() {
+export default function Contact() {
     const [state, formAction] = useFormState(sendRequest, initialState);
-    const apps = ["Vidange 360"];
     return (
         <main>
-            <form
-                className="flex flex-col gap-10 items-center lg:mx-40"
-                action={formAction}
-            >
-                <h1 className="mb-10 text-lg font-bold lg:text-4xl">
-                    request deleting your data
-                </h1>
+            <form className="flex flex-col gap-10 lg:mx-40" action={formAction}>
+                <h1>request deleting your data</h1>
+
+                <h2>Personal Information</h2>
                 <div className="gap-10 w-full lg:gap-16 laptop-flex">
                     <input
                         required
@@ -50,33 +38,54 @@ export default function Detele() {
                     />
                 </div>
 
+                <h2>Project Details</h2>
+
                 <div className="gap-10 w-full lg:gap-16 laptop-flex">
                     <input
                         required
-                        name="name"
+                        name="subject"
                         id="name"
                         type="text"
                         className="w-full"
-                        placeholder="Full Name"
+                        placeholder="A brief title for the inquiry"
                     />
-                    <input
-                        required
-                        name="email"
-                        id="email"
-                        type="text"
-                        className="w-full"
-                        placeholder="email"
-                    />
+
+                    <select required className="w-full" id="type" name="type">
+                        <option value="">Select project type</option>
+                        <option value="website development">
+                            Website Development
+                        </option>
+                        <option value="web application">Web Application</option>
+                        <option value="mobile app development">
+                            Mobile App Development
+                        </option>
+                        <option value="consultation">Consultation</option>
+                        <option value="other">Other</option>
+                    </select>
                 </div>
 
-                <select required className="w-full" id="app" name="app">
-                    <option value="">Select an app</option>
-                    {apps.map((app, index) => (
-                        <div key={index}>
-                            <option value={app}>{app}</option>
-                        </div>
-                    ))}
-                </select>
+                <textarea
+                    required
+                    name="description"
+                    id="name"
+                    placeholder="a Description of the project"
+                ></textarea>
+
+                <div className="flex gap-4 items-center">
+                    <input
+                        required
+                        className="size-6"
+                        type="checkbox"
+                        id="css"
+                        name="okay"
+                    />
+                    <p className="text-sm">
+                        Your privacy is important to us. The information you
+                        provide will only be used to respond to your inquiry and
+                        will not be shared with third parties without your
+                        consent.
+                    </p>
+                </div>
                 <SubmitButton />
                 <h2 className="text-lg font-bold lg:text- xl">
                     {state?.message}

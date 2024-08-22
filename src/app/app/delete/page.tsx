@@ -1,7 +1,8 @@
 "use client";
-import { useFormState, useFormStatus } from "react-dom";
 
-import Button from "@/components/shared/button";
+import { useFormState } from "react-dom";
+
+import SubmitButton from "@/components/shared/button/submitButton";
 
 import { sendRequest } from "./actions";
 
@@ -9,18 +10,8 @@ const initialState = {
     message: "",
 };
 
-function SubmitButton() {
-    const { pending } = useFormStatus();
-    return (
-        <Button width="half" disabled={pending} type="submit">
-            Send
-        </Button>
-    );
-}
-
 export default function Detele() {
     const [state, formAction] = useFormState(sendRequest, initialState);
-    const apps = ["Vidange 360"];
     return (
         <main>
             <form
@@ -34,18 +25,14 @@ export default function Detele() {
                     required
                     name="email"
                     id="email"
-                    type="text"
+                    type="email"
                     className="w-full"
                     placeholder="email"
                 />
 
                 <select required className="w-full" id="app" name="app">
                     <option value="">Select an app</option>
-                    {apps.map((app, index) => (
-                        <div key={index}>
-                            <option value={app}>{app}</option>
-                        </div>
-                    ))}
+                    <option value="Vidange 360">Vidange 360</option>
                 </select>
                 <SubmitButton />
                 <h2 className="text-lg font-bold lg:text- xl">
