@@ -6,7 +6,7 @@ export type body = {
     to: "contact@abdellatif.dev";
     subject: string;
     text: string;
-    html: string;
+    html?: string;
 };
 
 function getEmailInstance(): nodemailer.Transporter<SMTPTransport.SentMessageInfo> {

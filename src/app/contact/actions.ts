@@ -25,16 +25,13 @@ function getData(formData: FormData): Data {
 
 function getDeleteDataBody(formData: FormData): body {
     const data = getData(formData);
-    const text = "";
-
-    const html = "";
+    const text = JSON.stringify(data);
 
     return {
         from: "web@abdellatif.dev",
         to: "contact@abdellatif.dev",
         subject: "Project | work offer",
         text: text,
-        html: html,
     };
 }
 
