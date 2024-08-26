@@ -30,6 +30,14 @@ export default function Detele() {
                     placeholder="email"
                 />
 
+                <input
+                    required
+                    hidden
+                    className="size-6"
+                    type="checkbox"
+                    name="agreed"
+                />
+
                 <select required className="w-full" id="app" name="app">
                     <option value="">Select an app</option>
                     <option value="Vidange 360">Vidange 360</option>

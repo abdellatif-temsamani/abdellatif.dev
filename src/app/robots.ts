@@ -4,7 +4,7 @@ export default function robots(): MetadataRoute.Robots {
     return {
         rules: {
             userAgent: "*",
-            allow: ["/", "/about"],
+            allow: ["/", "/about", "/contact", "/app/delete"],
         },
         sitemap: "https://abdellatif.dev/sitemap.xml",
     };

@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useFormState } from "react-dom";
 
 import SubmitButton from "@/components/shared/button/submitButton";
@@ -76,8 +75,7 @@ export default function Contact() {
                         required
                         className="size-6"
                         type="checkbox"
-                        id="css"
-                        name="okay"
+                        name="agreed"
                     />
                     <p className="text-sm">
                         Your privacy is important to us. The information you
@@ -86,6 +84,14 @@ export default function Contact() {
                         consent.
                     </p>
                 </div>
+
+                <input
+                    required
+                    hidden
+                    className="size-6"
+                    type="checkbox"
+                    name="agreed"
+                />
                 <SubmitButton />
                 <h2 className="text-lg font-bold lg:text- xl">
                     {state?.message}

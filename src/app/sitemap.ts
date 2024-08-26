@@ -11,9 +11,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 1,
         },
         {
-            url: `${URL}/about`,
+            url: `${URL}/contact`,
             lastModified: new Date(),
             changeFrequency: "monthly",
+            priority: 0.8,
+        },
+        {
+            url: `${URL}/app/delete`,
+            lastModified: new Date(),
+            changeFrequency: "yearly",
             priority: 0.8,
         },
     ];

@@ -22,6 +22,13 @@ function getDeleteDataBody(email: string, app: string): body {
 }
 
 export async function sendRequest(_prevState: any, formData: FormData) {
+    const checked = formData.get("agreed");
+    if (checked === "on") {
+        return {
+            message: "i say no you hacker bot",
+        };
+    }
+
     try {
         const email = formData.get("email");
         const app = formData.get("app");
