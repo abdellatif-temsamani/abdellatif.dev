@@ -15,7 +15,7 @@ export default function Contact() {
     return (
         <main>
             <form className="flex flex-col gap-10 lg:mx-40" action={formAction}>
-                <h1>request deleting your data</h1>
+                <h1>contact Us</h1>
 
                 <h2>Personal Information</h2>
                 <div className="gap-10 w-full lg:gap-16 laptop-flex">
