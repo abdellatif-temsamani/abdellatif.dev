@@ -1,4 +1,4 @@
-![ad logo](./public/images/icons/ad.svg)
+![ad logo](./public/images/ad.svg)
 
 <!-- toc -->
 

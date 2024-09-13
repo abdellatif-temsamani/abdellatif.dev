@@ -1,3 +1,6 @@
+import HooliaEnergyPng from "@public/images/clients/logos/hoolia_energy.png";
+import { StaticImageData } from "next/image";
+
 /**
  * @type {Company}
  *
@@ -7,7 +10,7 @@
  */
 type Company = {
     name: string;
-    logo: `/images/clients/logos/${string}`;
+    logo: StaticImageData;
     linkedin: `https://www.linkedin.com/company/${string}/`;
     imageSize: number;
 };
@@ -62,7 +65,7 @@ export const testimonials: Testimonial[] = [
             role: "Project Manager",
             company: {
                 name: "Hoolia Energy",
-                logo: "/images/clients/logos/hoolia_energy.jpeg",
+                logo: HooliaEnergyPng,
                 linkedin: "https://www.linkedin.com/company/hoolia-energy/",
                 imageSize: 80,
             },
