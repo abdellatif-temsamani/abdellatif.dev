@@ -46,13 +46,13 @@ export default function TestimonialCard({
             <p className="font-bold">{testimonial.quote}</p>
             <div className="flex gap-6 md:items-center">
                 <Link href={testimonial.user.company.linkedin} target="_blank">
-                    <Image
-                        className="w-full h-auto"
-                        src={testimonial.user.company.logo}
-                        alt={testimonial.user.company.name}
-                        width={testimonial.user.company.imageSize}
-                        height={testimonial.user.company.imageSize}
-                    />
+                    <div className="py-4 px-6 border-2 bg-sky-50 shadow-primary border-sky-950">
+                        <Image
+                            className="w-32"
+                            src={testimonial.user.company.logo}
+                            alt={testimonial.user.company.name}
+                        />
+                    </div>
                 </Link>
                 <svg
                     className="hidden h-20 lg:block"

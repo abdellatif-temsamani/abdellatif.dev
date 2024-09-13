@@ -20,13 +20,19 @@
         "sharp": "^0.33.5"
     },
     "devDependencies": {
+        "@eslint/js": "^9.10.0",
         "@types/node": "^22.5.4",
         "@types/nodemailer": "^6.4.15",
         "@types/react": "^18.3.5",
         "@types/react-dom": "^18.3.0",
         "autoprefixer": "^10.4.20",
+        "eslint": "^9.10.0",
+        "eslint-plugin-react": "^7.36.1",
+        "eslint-plugin-simple-import-sort": "^12.1.1",
+        "globals": "^15.9.0",
         "postcss": "^8.4.45",
         "tailwindcss": "^3.4.11",
-        "typescript": "^5.6.2"
+        "typescript": "^5.6.2",
+        "typescript-eslint": "^8.5.0"
     }
 }

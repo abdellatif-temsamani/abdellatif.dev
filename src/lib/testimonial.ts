@@ -12,7 +12,6 @@ type Company = {
     name: string;
     logo: StaticImageData;
     linkedin: `https://www.linkedin.com/company/${string}/`;
-    imageSize: number;
 };
 
 /**
@@ -67,7 +66,6 @@ export const testimonials: Testimonial[] = [
                 name: "Hoolia Energy",
                 logo: HooliaEnergyPng,
                 linkedin: "https://www.linkedin.com/company/hoolia-energy/",
-                imageSize: 80,
             },
         },
     },
