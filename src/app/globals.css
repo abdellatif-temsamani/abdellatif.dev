@@ -106,7 +106,7 @@
 
     .link {
         @apply font-bold;
-        @apply text-xl md:text-base;
+        @apply text-xl md:text-lg;
     }
 
     .link:after {
@@ -136,6 +136,10 @@
             background-repeat: repeat;
             @apply bg-sky-100;
         }
+    }
+
+    .transition-500 {
+        @apply transition-all duration-500;
     }
 }
 

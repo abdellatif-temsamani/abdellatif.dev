@@ -17,7 +17,7 @@ export default function Trusted(): JSX.Element {
             <div className="flex flex-wrap gap-16 w-full md:w-auto">
                 {trustedClients.map((logo: StaticImageData) => (
                     <div
-                        className="py-4 px-6 border-2 bg-sky-50 shadow-primary border-sky-950"
+                        className="py-4 px-6 w-full justify-center flex border-2 bg-sky-50 shadow-primary border-sky-950 md:w-fit"
                         key={logo.src}
                     >
                         <Image alt={logo.src} src={logo} />

@@ -56,7 +56,7 @@ export type Testimonial = {
  */
 export const testimonials: Testimonial[] = [
     {
-        stars: 4,
+        stars: 5,
         quote: "Working with Abdellatif was a good experience. He is a software developer who consistently delivers high-quality code. Abdellatif is a reliable team player, always willing to lend a hand and share his expertise.",
         user: {
             name: "Noura TAKI",

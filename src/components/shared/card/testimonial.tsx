@@ -22,7 +22,7 @@ export default function TestimonialCard({
     testimonial,
 }: Readonly<TestimonialCardProps>) {
     return (
-        <div className="flex flex-col gap-6 p-8 md:gap-4">
+        <div className="flex flex-col gap-4 p-8 border-2 md:gap-4 hover:shadow-none bg-sky-50 shadow-primary transition-500 border-sky-950">
             <Stars rating={testimonial.stars} />
             <div>
                 <svg
@@ -44,16 +44,30 @@ export default function TestimonialCard({
             </div>
 
             <p className="font-bold">{testimonial.quote}</p>
-            <div className="flex gap-6 md:items-center">
+            <div className="flex flex-col gap-6 md:flex-row md:items-center">
                 <Link href={testimonial.user.company.linkedin} target="_blank">
-                    <div className="py-4 px-6 border-2 bg-sky-50 shadow-primary border-sky-950">
-                        <Image
-                            className="w-32"
-                            src={testimonial.user.company.logo}
-                            alt={testimonial.user.company.name}
-                        />
-                    </div>
+                    <Image
+                        className="w-32"
+                        src={testimonial.user.company.logo}
+                        alt={testimonial.user.company.name}
+                    />
                 </Link>
+                <svg
+                    className="block w-full h-1 lg:hidden"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <title>line</title>
+                    <line
+                        x1={0}
+                        x2="100%"
+                        y1={0}
+                        y2={0}
+                        stroke="#082F49"
+                        strokeWidth="6"
+                    />
+                </svg>
+
                 <svg
                     className="hidden h-20 lg:block"
                     width="4"
