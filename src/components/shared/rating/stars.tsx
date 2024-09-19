@@ -10,19 +10,19 @@ type StarsProps = {
  * @param {StarsProps}
  */
 export default function Stars({ rating }: Readonly<StarsProps>) {
+    function setStarColor(index: number): string {
+        if (index < rating) {
+            return "fill-sky-400";
+        } else {
+            return "fill-sky-950";
+        }
+    }
     return (
         <div className="flex gap-1">
-            {Array.from({ length: rating }, (i: number) => {
+            {new Array(5).fill(5).map((_, index: number) => {
                 return (
-                    <div key={i}>
-                        <FaStar className="w-8 h-8 fill-sky-400" />
-                    </div>
-                );
-            })}
-            {Array.from({ length: 5 - rating }, (i: number) => {
-                return (
-                    <div key={i}>
-                        <FaStar className="w-8 h-8 fill-sky-950" />
+                    <div key={index}>
+                        <FaStar className={`size-8   ${setStarColor(index)}`} />
                     </div>
                 );
             })}

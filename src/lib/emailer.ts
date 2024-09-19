@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import SMTPTransport from "nodemailer/lib/smtp-transport";
 
-export type body = {
+export type Body = {
     from: "web@abdellatif.dev";
     to: "contact@abdellatif.dev";
     subject: string;
@@ -9,6 +9,9 @@ export type body = {
     html?: string;
 };
 
+/**
+ * @returns {nodemailer.Transporter<SMTPTransport.SentMessageInfo>} email instance
+ */
 function getEmailInstance(): nodemailer.Transporter<SMTPTransport.SentMessageInfo> {
     return nodemailer.createTransport({
         host: "mail.abdellatif.dev",
@@ -21,7 +24,10 @@ function getEmailInstance(): nodemailer.Transporter<SMTPTransport.SentMessageInf
     });
 }
 
-export async function sendEmail(body: body) {
+/**
+ * @param {Body} body email of the body
+ */
+export async function sendEmail(body: Body) {
     const emailer = getEmailInstance();
     await emailer.sendMail(body);
 }

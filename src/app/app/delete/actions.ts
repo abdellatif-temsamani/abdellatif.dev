@@ -1,7 +1,7 @@
 "use server";
-import { body, sendEmail } from "@/lib/emailer";
+import { Body, sendEmail } from "@/lib/emailer";
 
-function getDeleteDataBody(email: string, app: string): body {
+function getDeleteDataBody(email: string, app: string): Body {
     const text = `Dear Abdellatif dev
         I request delete all my data for the app ${app}
         with the following email ${email}`;

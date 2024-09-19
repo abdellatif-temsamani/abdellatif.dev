@@ -1,5 +1,5 @@
 "use server";
-import { body, sendEmail } from "@/lib/emailer";
+import { Body, sendEmail } from "@/lib/emailer";
 
 const data = ["name", "email", "subject", "type", "description", "okay"];
 
@@ -23,7 +23,7 @@ function getData(formData: FormData): Data {
     };
 }
 
-function getDeleteDataBody(formData: FormData): body {
+function getDeleteDataBody(formData: FormData): Body {
     const data = getData(formData);
     const text = JSON.stringify(data);
 
