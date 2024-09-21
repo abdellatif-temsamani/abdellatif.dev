@@ -1,29 +1,12 @@
 import HooliaEnergyPng from "@public/images/clients/logos/hoolia_energy.png";
 import { StaticImageData } from "next/image";
 
-/**
- * @type {Company}
- *
- * @property name - name of the company
- * @property logo - logo of the company
- * @property linkedin - linkedin page of the company
- */
 type Company = {
     name: string;
     logo: StaticImageData;
     linkedin: `https://www.linkedin.com/company/${string}/`;
 };
 
-/**
- * @type {Client}
- * responsible for the data of the clients section
- *
- * @property name - name of the client
- * @property avatar - avatar of the client
- * @property linkedin - linkedin page of the client
- * @property role - role of the client
- * @property company - company of the client
- */
 type Client = {
     name: string;
     linkedin: `https://www.linkedin.com/in/${string}/`;
@@ -31,14 +14,6 @@ type Client = {
     company: Company;
 };
 
-/**
- * @type {Testimonial}
- * responsible for the data of the testimonials section
- *
- * @property stars - number of starts
- * @property quote - quote of the testimonial
- * @property user - user of the testimonial
- */
 export type Testimonial = {
     stars: 0 | 1 | 2 | 3 | 4 | 5;
     quote: string;
@@ -46,13 +21,8 @@ export type Testimonial = {
 };
 
 /**
- * TODO: add real testimonials
+ * TODO: add more testimonials
  *
- */
-/**
- * List of testimonials
- *
- * @type {Testimonial[]}
  */
 export const testimonials: Testimonial[] = [
     {
