@@ -2,9 +2,10 @@ export default function Policy() {
     return (
         <main>
             <div className="flex flex-col gap-8">
-                <h2>Privacy Policy</h2>
-                <h3>Introduction</h3>
-                <p>
+                <h1>Privacy Policy</h1>
+                <h2>Introduction</h2>
+
+                <p className="paragraph">
                     Our privacy policy will help you understand what information
                     we collect at abdellatif dev, how abdellatif dev uses it,
                     and what choices you have. abdellatif dev built the QR Code
@@ -20,8 +21,8 @@ export default function Policy() {
                     is accessible in our website, unless otherwise defined in
                     this Privacy Policy.
                 </p>
-                <h3>Information Collection and Use</h3>
-                <p>
+                <h2>Information Collection and Use</h2>
+                <p className="paragraph">
                     For a better experience while using our Service, we may
                     require you to provide us with certain personally
                     identifiable information, including but not limited to users
@@ -31,57 +32,71 @@ export default function Policy() {
                     party services that may collect information used to identify
                     you.
                 </p>
-                <h3>Cookies</h3>
-                <p>
-                    Cookies are files with small amount of data that is commonly
-                    used an anonymous unique identifier. These are sent to your
-                    browser from the website that you visit and are stored on
-                    your devices’s internal memory.
-                </p>
-                <p>
-                    This Services does not uses these “cookies” explicitly.
-                    However, the app may use third party code and libraries that
-                    use “cookies” to collection information and to improve their
-                    services. You have the option to either accept or refuse
-                    these cookies, and know when a cookie is being sent to your
-                    device. If you choose to refuse our cookies, you may not be
-                    able to use some portions of this Service.
-                </p>
-                <h3>Location Information</h3>
-                <p>
+                <h2>Cookies</h2>
+                <div className="paragraph">
+                    <p>
+                        Cookies are files with small amount of data that is
+                        commonly used an anonymous unique identifier. These are
+                        sent to your browser from the website that you visit and
+                        are stored on your devices’s internal memory.
+                    </p>
+                    <p>
+                        This Services does not uses these “cookies” explicitly.
+                        However, the app may use third party code and libraries
+                        that use “cookies” to collection information and to
+                        improve their services. You have the option to either
+                        accept or refuse these cookies, and know when a cookie
+                        is being sent to your device. If you choose to refuse
+                        our cookies, you may not be able to use some portions of
+                        this Service.
+                    </p>
+                </div>
+
+                <h2>Location Information</h2>
+
+                <p className="paragraph">
                     Some of the services may use location information
                     transmitted from users’ mobile phones. We only use this
                     information within the scope necessary for the designated
                     service.
                 </p>
-                <h3>Device Information</h3>
-                <p>
+                <h2>Device Information</h2>
+                <p className="paragraph">
                     We collect information from your device in some cases. The
                     information will be utilized for the provision of better
                     service and to prevent fraudulent acts. Additionally, such
                     information will not include that which will identify the
                     individual user.
                 </p>
-                <h3>Service Providers</h3>
-                <p>
-                    We may employ third-party companies and individuals due to
-                    the following reasons:
-                </p>
-                <ul>
-                    <li>To facilitate our Service;</li>
-                    <li>To provide the Service on our behalf;</li>
-                    <li>To perform Service-related services; or</li>
-                    <li>To assist us in analyzing how our Service is used.</li>
-                </ul>
-                <p>
-                    We want to inform users of this Service that these third
-                    parties have access to your Personal Information. The reason
-                    is to perform the tasks assigned to them on our behalf.
-                    However, they are obligated not to disclose or use the
-                    information for any other purpose.
-                </p>
-                <h3>Security</h3>
-                <p>
+                <h2>Service Providers</h2>
+                <div className="paragraph">
+                    <p>
+                        We may employ third-party companies and individuals due
+                        to the following reasons:
+                    </p>
+                    <ul>
+                        <li className="item">To facilitate our Service;</li>
+                        <li className="item">
+                            To provide the Service on our behalf;
+                        </li>
+                        <li className="item">
+                            To perform Service-related services; or
+                        </li>
+                        <li className="item">
+                            To assist us in analyzing how our Service is used.
+                        </li>
+                    </ul>
+                    <p>
+                        We want to inform users of this Service that these third
+                        parties have access to your Personal Information. The
+                        reason is to perform the tasks assigned to them on our
+                        behalf. However, they are obligated not to disclose or
+                        use the information for any other purpose.
+                    </p>
+                </div>
+
+                <h2>Security</h2>
+                <p className="paragraph">
                     We value your trust in providing us your Personal
                     Information, thus we are striving to use commercially
                     acceptable means of protecting it. But remember that no
@@ -89,8 +104,8 @@ export default function Policy() {
                     electronic storage is 100% secure and reliable, and we
                     cannot guarantee its absolute security.
                 </p>
-                <h3>Children’s Privacy</h3>
-                <p>
+                <h2>Children’s Privacy</h2>
+                <p className="paragraph">
                     This Services do not address anyone under the age of 13. We
                     do not knowingly collect personal identifiable information
                     from children under 13. In the case we discover that a child
@@ -100,22 +115,14 @@ export default function Policy() {
                     provided us with personal information, please contact us so
                     that we will be able to do necessary actions.
                 </p>
-                <h3>Changes to This Privacy Policy</h3>
-                <p>
+                <h2>Changes to This Privacy Policy</h2>
+                <p className="paragraph">
                     We may update our Privacy Policy from time to time. Thus,
                     you are advised to review this page periodically for any
                     changes. We will notify you of any changes by posting the
                     new Privacy Policy on this page. These changes are effective
                     immediately, after they are posted on this page.
                 </p>
-                <h3>Contact Us</h3>
-                <p>
-                    If you have any questions or suggestions about our Privacy
-                    Policy, do not hesitate to contact us. Contact Information:
-                </p>
-                <ul>
-                    <li>Email: contact@abdellatif.dev</li>
-                </ul>
             </div>
         </main>
     );
