@@ -1,3 +1,4 @@
+/* eslint-disable jsdoc/no-undefined-types */
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
@@ -5,8 +6,7 @@ import { trustedClients } from "@/lib/clients";
 
 /**
  * Trusted clients component (about page)
- *
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Card
  */
 export default function Trusted(): JSX.Element {
     return (
@@ -17,7 +17,7 @@ export default function Trusted(): JSX.Element {
             <div className="flex flex-wrap gap-16 w-full md:w-auto">
                 {trustedClients.map((logo: StaticImageData) => (
                     <div
-                        className="py-4 px-6 w-full justify-center flex border-2 bg-sky-50 shadow-primary border-sky-950 md:w-fit"
+                        className="flex justify-center py-4 px-6 w-full border-2 hover:shadow-none transition-500 bg-sky-50 shadow-primary border-sky-950 md:w-fit"
                         key={logo.src}
                     >
                         <Image alt={logo.src} src={logo} />

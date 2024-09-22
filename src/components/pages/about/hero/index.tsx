@@ -11,7 +11,7 @@ export default function Hero(): JSX.Element {
     return (
         <div className="flex flex-col gap-8 items-center">
             <h1>Your Trusted Partner</h1>
-            <p className="md:w-1/2">
+            <p className="md:w-1/3">
                 Abdellatif Dev is a freelance software engineer agency that you
                 can rely on for all your engineering needs.
             </p>
