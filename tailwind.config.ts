@@ -8,6 +8,10 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            dropShadow: {
+                primary: "4px 6px 0px 0px rgba(8,47,73,1)",
+                card: "6px 8px 0px 0px rgba(8,47,73,1)",
+            },
             boxShadow: {
                 primary: "4px 6px 0px 0px rgba(8,47,73,1)",
                 card: "6px 8px 0px 0px rgba(8,47,73,1)",
