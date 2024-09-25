@@ -1,8 +1,8 @@
 "use client";
 
-import { useFormState, useFormStatus } from "react-dom";
+import { useFormState } from "react-dom";
 
-import Button from "@/components/shared/button";
+import SubmitButton from "@/components/shared/button/submitButton";
 
 import { sendRequest } from "./actions";
 
@@ -12,8 +12,6 @@ const initialState = {
 
 export default function Contact() {
     const [state, formAction] = useFormState(sendRequest, initialState);
-    const { pending } = useFormStatus();
-
     return (
         <main>
             <form className="flex flex-col gap-10 lg:mx-40" action={formAction}>
@@ -33,7 +31,7 @@ export default function Contact() {
                         required
                         name="email"
                         id="email"
-                        type="text"
+                        type="email"
                         className="w-full"
                         placeholder="email"
                     />
@@ -77,7 +75,7 @@ export default function Contact() {
                         required
                         className="size-6"
                         type="checkbox"
-                        name="agreed"
+                        name="privacy-agreed"
                     />
                     <p className="text-sm">
                         Your privacy is important to us. The information you
@@ -88,20 +86,15 @@ export default function Contact() {
                 </div>
 
                 <input
-                    required
                     hidden
                     className="size-6"
                     type="checkbox"
                     name="agreed"
                 />
-                <Button width="half" disabled={pending} type="submit">
-                    Send
-                </Button>
 
-                <h2
-                    aria-live="polite"
-                    className="text-lg font-bold lg:text- xl"
-                >
+                <SubmitButton />
+
+                <h2 className="text-lg font-bold lg:text- xl">
                     {state?.message}
                 </h2>
             </form>
