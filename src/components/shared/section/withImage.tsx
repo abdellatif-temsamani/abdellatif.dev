@@ -2,14 +2,6 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
-/**
- * @type {withImageProps}
- *
- * @property image
- * @property alt
- * @property hideOnMobile
- * @property children
- */
 type withImageProps = {
     image: string | StaticImport;
     alt: string;
@@ -31,7 +23,7 @@ export function WithImage({
     return (
         <div
             id="hero"
-            className="flex flex-col gap-14 justify-between items-center md:gap-12 lg:flex-row"
+            className="flex flex-col gap-14 justify-between items-center md:gap-12 lg:flex-row p-vertical"
         >
             <div className="flex flex-col gap-14 lg:gap-10 lg:w-1/2">
                 {children}

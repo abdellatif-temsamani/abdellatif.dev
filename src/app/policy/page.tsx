@@ -1,6 +1,6 @@
 export default function Policy() {
     return (
-        <main>
+        <main className="p-20 p-vertical">
             <div className="flex flex-col gap-8">
                 <h1>Privacy Policy</h1>
                 <h2>Introduction</h2>

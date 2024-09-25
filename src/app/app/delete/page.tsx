@@ -31,7 +31,6 @@ export default function Detele() {
                 />
 
                 <input
-                    required
                     hidden
                     className="size-6"
                     type="checkbox"
@@ -43,6 +42,7 @@ export default function Detele() {
                     <option value="Vidange 360">Vidange 360</option>
                 </select>
                 <SubmitButton />
+
                 <h2 className="text-lg font-bold lg:text- xl">
                     {state?.message}
                 </h2>

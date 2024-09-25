@@ -14,7 +14,7 @@ export default function Logo() {
         <div className="flex justify-center">
             <div className="flex flex-col">
                 <h1
-                    className="text-5xl mb-2 font-bold sm:text-6xl 2xl:text-7xl"
+                    className="text-5xl mb-2 font-bold sm:text-7xl 2xl:text-6xl"
                     style={akayaTelivigala.style}
                 >
                     <span className="text-sky-400">A</span>bdellatif{" "}

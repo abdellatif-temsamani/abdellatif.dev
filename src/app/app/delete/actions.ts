@@ -21,11 +21,12 @@ function getDeleteDataBody(email: string, app: string): Body {
     };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function sendRequest(_prevState: any, formData: FormData) {
     const checked = formData.get("agreed");
     if (checked === "on") {
         return {
-            message: "i say no you hacker bot",
+            message: "i say no you bot",
         };
     }
 

@@ -1,8 +1,6 @@
 "use server";
 import { Body, sendEmail } from "@/lib/emailer";
 
-const data = ["name", "email", "subject", "type", "description", "okay"];
-
 type Data = {
     name: string;
     email: string;
@@ -31,15 +29,17 @@ function getDeleteDataBody(formData: FormData): Body {
         from: "web@abdellatif.dev",
         to: "contact@abdellatif.dev",
         subject: "Project | work offer",
+        html: text,
         text: text,
     };
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function sendRequest(_prevState: any, formData: FormData) {
     const checked = formData.get("agreed");
     if (checked === "on") {
         return {
-            message: "i say no you hacker bot",
+            message: "i say no you bot",
         };
     }
 

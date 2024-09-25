@@ -1,6 +1,6 @@
 export default function Terms() {
     return (
-        <main>
+        <main className="p-20 p-vertical">
             <div className="flex flex-col gap-8">
                 <p>
                     <strong>Effective Date:</strong> 22/09/2024

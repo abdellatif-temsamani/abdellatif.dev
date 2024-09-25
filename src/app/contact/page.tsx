@@ -31,7 +31,7 @@ export default function Contact() {
                         required
                         name="email"
                         id="email"
-                        type="text"
+                        type="email"
                         className="w-full"
                         placeholder="email"
                     />
@@ -75,7 +75,7 @@ export default function Contact() {
                         required
                         className="size-6"
                         type="checkbox"
-                        name="agreed"
+                        name="privacy-agreed"
                     />
                     <p className="text-sm">
                         Your privacy is important to us. The information you
@@ -86,13 +86,14 @@ export default function Contact() {
                 </div>
 
                 <input
-                    required
                     hidden
                     className="size-6"
                     type="checkbox"
                     name="agreed"
                 />
+
                 <SubmitButton />
+
                 <h2 className="text-lg font-bold lg:text- xl">
                     {state?.message}
                 </h2>
