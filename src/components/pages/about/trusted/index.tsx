@@ -1,4 +1,3 @@
-/* eslint-disable jsdoc/no-undefined-types */
 import { StaticImageData } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 
@@ -10,7 +9,7 @@ import { trustedClients } from "@/lib/clients";
  */
 export default function Trusted(): JSX.Element {
     return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 p-vertical">
             <h1 className="lg:w-1/2">
                 Trusted by leading companies around the globe
             </h1>

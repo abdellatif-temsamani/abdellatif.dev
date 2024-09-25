@@ -1,23 +1,20 @@
+/* eslint-disable jsdoc/no-undefined-types */
 import Link from "next/link";
-import { FaAnglesRight, FaCode } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa6";
 
 import { Feature } from "@/lib/features";
 
-/**
- * @type {CardProps}
- *
- * @property  cardInfo
- */
 type CardProps = {
     cardInfo: Feature;
 };
 
 /**
- * Card component
  *
- * @param {CardProps} { cardInfo }
+ * @param {CardProps} props props
+ * @param {Feature} props.cardInfo card into
+ * @returns {JSX.Element} Card
  */
-export default function Card({ cardInfo }: Readonly<CardProps>) {
+export default function Card({ cardInfo }: Readonly<CardProps>): JSX.Element {
     return (
         <Link href={cardInfo.link}>
             <div className="flex flex-col flex-grow gap-4 justify-evenly py-4 px-8 border-2 lg:w-96 hover:shadow-none bg-sky-50 transition-500 shadow-card">
@@ -28,10 +25,6 @@ export default function Card({ cardInfo }: Readonly<CardProps>) {
                 <h3 className="text-sm font-normal sm:text-base text-sky-900">
                     {cardInfo.description}
                 </h3>
-                <div className="flex justify-between font-light hover:underline text-sky-900">
-                    Learn More
-                    <FaAnglesRight className="fill-sky-900" />
-                </div>
             </div>
         </Link>
     );

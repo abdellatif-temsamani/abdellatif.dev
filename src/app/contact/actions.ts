@@ -1,29 +1,19 @@
 "use server";
 import { Body, sendEmail } from "@/lib/emailer";
 
-const data = ["name", "email", "subject", "type", "description", "okay"];
+function getData(formData: FormData) {
+    const keys: FormDataIterator<string> = formData.keys();
+    const data: { [key: string]: FormDataEntryValue | null } = {};
 
-type Data = {
-    name: string;
-    email: string;
-    subject: string;
-    type: string;
-    description: string;
-    okay: string;
-};
+    keys.map((key) => {
+        data[key] = formData.get(key);
+    });
 
-function getData(formData: FormData): Data {
-    return {
-        name: formData.get("name") as string,
-        email: formData.get("email") as string,
-        subject: formData.get("subject") as string,
-        type: formData.get("type") as string,
-        description: formData.get("description") as string,
-        okay: formData.get("okay") as string,
-    };
+    console.log(data);
+    return data;
 }
 
-function getDeleteDataBody(formData: FormData): Body {
+function getContactUsDataBody(formData: FormData): Body {
     const data = getData(formData);
     const text = JSON.stringify(data);
 
@@ -39,12 +29,12 @@ export async function sendRequest(_prevState: any, formData: FormData) {
     const checked = formData.get("agreed");
     if (checked === "on") {
         return {
-            message: "i say no you hacker bot",
+            message: "i say no you bot",
         };
     }
 
     try {
-        const body = getDeleteDataBody(formData);
+        const body = getContactUsDataBody(formData);
         await sendEmail(body);
         return { message: "Your request will be handled in the next 24 hours" };
     } catch {

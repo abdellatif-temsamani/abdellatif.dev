@@ -8,7 +8,7 @@ import { testimonials } from "@/lib/testimonial";
  */
 export default function Testimonials(): JSX.Element {
     return (
-        <div className="flex flex-col gap-14 sm:gap-10">
+        <div className="flex flex-col gap-14 sm:gap-10 p-vertical">
             <div className="flex flex-col gap-2">
                 <h1>Happy Customers</h1>
                 <p className="text-xs">

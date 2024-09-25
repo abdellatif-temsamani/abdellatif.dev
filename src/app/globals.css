@@ -34,7 +34,7 @@
     }
 
     main {
-        padding: 40px 32px 0 32px;
+        padding-top: 40px;
         @apply flex flex-col gap-32;
     }
 
@@ -86,7 +86,7 @@
 
     @media (min-width: 1024px) {
         main {
-            padding: 80px 64px 80px 64px;
+            padding-top: 80px;
         }
     }
 }
@@ -128,6 +128,10 @@
         @apply flex-col lg:flex-row;
     }
 
+    .p-vertical {
+        padding: 0 64px 0 64px;
+    }
+
     @media (max-width: 1024px) {
         .nav-menu {
             background-image: url("/images/effects/grainy.png"),
@@ -135,6 +139,10 @@
             background-size: 100%;
             background-repeat: repeat;
             @apply bg-sky-100;
+        }
+
+        .p-vertical {
+            padding: 0 32px 0 32px;
         }
     }
 
