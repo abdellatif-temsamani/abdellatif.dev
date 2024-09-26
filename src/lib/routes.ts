@@ -14,12 +14,8 @@ export type NavLinkProp = {
  * @type {NavLinkProp[]}
  */
 export const navLinks: NavLinkProp[] = [
-    /**
-     * NOTE: commented out links are not yet implemented
-     */
-    { title: "Home", href: "/" },
-    { title: "Contact", href: "/contact" },
     { title: "About", href: "/about" },
-    // { title: "Services", href: "/services" },
-    // { title: "Case Studies", href: "/case-studies" },
+    { title: "Contact us", href: "/contact" },
+    { title: "Services", href: "/services" },
+    { title: "Case Studies", href: "/case-studies" },
 ];
