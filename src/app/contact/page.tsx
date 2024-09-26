@@ -14,7 +14,10 @@ export default function Contact() {
     const [state, formAction] = useFormState(sendRequest, initialState);
     return (
         <main>
-            <form className="flex flex-col gap-10 lg:mx-40" action={formAction}>
+            <form
+                className="flex flex-col gap-10 lg:mx-40 p-vertical"
+                action={formAction}
+            >
                 <h1>contact Us</h1>
 
                 <h2>Personal Information</h2>

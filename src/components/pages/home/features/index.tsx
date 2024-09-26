@@ -10,7 +10,7 @@ import { Feature, features } from "@/lib/features";
 export default function Features(): JSX.Element {
     return (
         <div className="flex flex-col gap-14 justify-between sm:gap-12 p-vertical">
-            <h1 className="lg:w-1/2">
+            <h1 className="lg:w-2/3">
                 We specialize in Web Development, Mobile Application
                 Development, and Custom Software Solutions
             </h1>

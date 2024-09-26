@@ -138,7 +138,7 @@
                 url("/images/effects/patterns.png");
             background-size: 100%;
             background-repeat: repeat;
-            @apply bg-sky-100;
+            @apply bg-sky-200;
         }
 
         .p-vertical {
