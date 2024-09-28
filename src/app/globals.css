@@ -35,6 +35,7 @@
 
     main {
         padding-top: 40px;
+        padding-bottom: 120px;
         @apply flex flex-col gap-32;
     }
 
@@ -47,7 +48,7 @@
     }
 
     h1 {
-        @apply text-2xl font-extrabold sm:text-4xl;
+        @apply text-3xl font-extrabold sm:text-4xl;
     }
 
     h2 {
@@ -138,7 +139,7 @@
                 url("/images/effects/patterns.png");
             background-size: 100%;
             background-repeat: repeat;
-            @apply bg-sky-100;
+            @apply bg-sky-200;
         }
 
         .p-vertical {
@@ -156,6 +157,10 @@
 
     .transition-500 {
         @apply transition-all duration-500;
+    }
+
+    .bg-blur {
+        backdrop-filter: blur(1px);
     }
 }
 

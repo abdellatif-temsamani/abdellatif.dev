@@ -9,7 +9,7 @@ import { WithImage } from "@/components/shared/section/withImage";
  */
 export default function InnovaTech(): JSX.Element {
     return (
-        <WithImage image={BooksSvg} alt="Hero" hideOnMobile={true}>
+        <WithImage image={BooksSvg} alt="Hero" hideOnMobile>
             <h1>Empowering Businesses with custom Software Solutions</h1>
 
             <p>

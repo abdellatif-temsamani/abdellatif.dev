@@ -15,7 +15,7 @@ export default function Detele() {
     return (
         <main>
             <form
-                className="flex flex-col gap-10 items-center lg:mx-72"
+                className="flex flex-col gap-10 items-center lg:mx-72 p-vertical"
                 action={formAction}
             >
                 <h1 className="mb-10 text-lg font-bold lg:text-4xl">

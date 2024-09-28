@@ -1,11 +1,6 @@
 import TestimonialCard from "@/components/shared/card/testimonial";
 import { testimonials } from "@/lib/testimonial";
 
-/**
- * Testimonials component (home page)
- *
- * @returns {JSX.Element}
- */
 export default function Testimonials(): JSX.Element {
     return (
         <div className="flex flex-col gap-14 sm:gap-10 p-vertical">
