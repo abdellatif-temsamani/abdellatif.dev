@@ -1,31 +1,48 @@
-/* eslint-disable jsdoc/no-undefined-types */
+import { cva, VariantProps } from "class-variance-authority";
 import Link from "next/link";
+import { ComponentProps } from "react";
 import { FaCode } from "react-icons/fa6";
 
 import { Feature } from "@/lib/features";
 
-type CardProps = {
-    cardInfo: Feature;
-};
+const CardStyles = cva(
+    "flex border-4 flex-col flex-grow gap-4 justify-evenly py-4 px-8 " +
+    "lg:w-96 hover:shadow-none bg-sky-50 transition-500 shadow-card",
+    {
+        variants: {
+            width: {
+                fit: "md:w-fit",
+                half: "md:w-1/2",
+            },
+            color: {
+                primary: "bg-sky-400",
+                secondary: "bg-sky-50",
+            },
+        },
+        defaultVariants: {
+            width: "fit",
+            color: "primary",
+        },
+    },
+);
 
-/**
- *
- * @param {CardProps} props props
- * @param {Feature} props.cardInfo card into
- * @returns {JSX.Element} Card
- */
-export default function Card({ cardInfo }: Readonly<CardProps>): JSX.Element {
+type CardProps = VariantProps<typeof CardStyles> &
+    ComponentProps<"div"> & { cardInfo: Feature };
+
+export default function Card({
+    className,
+    cardInfo,
+    ...props
+}: Readonly<CardProps>) {
     return (
-        <Link href={cardInfo.link}>
-            <div className="flex flex-col flex-grow gap-4 justify-evenly py-4 px-8 border-2 lg:w-96 hover:shadow-none bg-sky-50 transition-500 shadow-card">
-                <FaCode className="w-8 h-8 sm:w-12 sm:h-12 fill-sky-900" />
-                <h3 className="text-lg font-bold sm:text-xl text-sky-950">
-                    {cardInfo.title}
-                </h3>
-                <h3 className="text-sm font-normal sm:text-base text-sky-900">
-                    {cardInfo.description}
-                </h3>
-            </div>
-        </Link>
+        <div {...props} className={CardStyles({ className })}>
+            <FaCode className="w-8 h-8 sm:w-12 sm:h-12 fill-sky-900" />
+            <h3 className="text-lg font-bold sm:text-xl text-sky-950">
+                {cardInfo.title}
+            </h3>
+            <h3 className="text-sm font-normal sm:text-base text-sky-900">
+                {cardInfo.description}
+            </h3>
+        </div>
     );
 }

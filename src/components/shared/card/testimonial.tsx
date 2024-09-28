@@ -22,7 +22,7 @@ export default function TestimonialCard({
     testimonial,
 }: Readonly<TestimonialCardProps>) {
     return (
-        <div className="flex flex-col gap-4 p-8 border-2 md:gap-4 hover:shadow-none bg-sky-50 shadow-primary transition-500 border-sky-950">
+        <div className="flex flex-col gap-4 p-8 border-4 md:gap-4 hover:shadow-none bg-sky-50 shadow-primary transition-500 border-sky-950">
             <Stars rating={testimonial.stars} />
             <div>
                 <svg
