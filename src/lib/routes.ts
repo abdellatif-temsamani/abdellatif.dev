@@ -6,6 +6,6 @@ export type NavLinkProp = {
 export const navLinks: NavLinkProp[] = [
     { title: "About", href: "/about" },
     { title: "Services", href: "/services" },
-    { title: "Case Studies", href: "/case-studies" },
+    // { title: "Case Studies", href: "/case-studies" },
     { title: "Contact us", href: "/contact" },
 ];
