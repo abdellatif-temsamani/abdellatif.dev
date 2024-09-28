@@ -41,11 +41,11 @@ export default function Features(): JSX.Element {
                 ensure a seamless development process and provide ongoing
                 support to ensure the success of your mobile app.
             </p>
-            <div className="flex flex-col gap-14 justify-between lg:flex-row">
+            <div className="flex flex-col gap-14 justify-between xl:flex-row">
                 {features.map((feature: Feature) => {
                     return (
-                        <div key={feature.title}>
-                            <Card className="h-full" cardInfo={feature} />
+                        <div className="w-full" key={feature.title}>
+                            <Card cardInfo={feature} />
                         </div>
                     );
                 })}

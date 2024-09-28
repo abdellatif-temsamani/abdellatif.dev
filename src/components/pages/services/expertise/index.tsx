@@ -35,8 +35,8 @@ export default function Expertises(): JSX.Element {
             <div className="flex flex-col gap-14 justify-between lg:flex-row">
                 {expertises.map((feature: Feature) => {
                     return (
-                        <div key={feature.description}>
-                            <Card className="h-full" cardInfo={feature} />
+                        <div className="w-full" key={feature.description}>
+                            <Card cardInfo={feature} />
                         </div>
                     );
                 })}

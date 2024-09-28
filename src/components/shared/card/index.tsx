@@ -1,13 +1,12 @@
 import { cva, VariantProps } from "class-variance-authority";
-import Link from "next/link";
 import { ComponentProps } from "react";
 import { FaCode } from "react-icons/fa6";
 
 import { Feature } from "@/lib/features";
 
 const CardStyles = cva(
-    "flex border-4 flex-col flex-grow gap-4 justify-evenly py-4 px-8 " +
-    "lg:w-96 hover:shadow-none bg-sky-50 transition-500 shadow-card",
+    "flex border-4 flex-col size-full flex-grow gap-4 justify-evenly py-4 px-8 " +
+        "hover:shadow-none bg-sky-50 transition-500 shadow-card",
     {
         variants: {
             width: {
