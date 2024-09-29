@@ -13,10 +13,7 @@ import Nav from "./nav/Nav";
  */
 export default function Header(): JSX.Element {
     return (
-        <header
-            id="waves"
-            className="flex sticky top-0 z-30 justify-between items-center py-8 px-6 border-b-4 sm:items-end sm:px-16 bg-sky-200 border-sky-950"
-        >
+        <header className="flex z-50 sticky top-0 justify-between items-center py-8 px-6 bg-cover border-b-4 sm:items-end sm:px-16 bg-sky-200 bg-waves">
             <Link href="/" className="after:hover:w-0">
                 <Image src={AdLogo} alt="logo" width={67} height={67} />
             </Link>

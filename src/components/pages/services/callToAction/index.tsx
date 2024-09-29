@@ -6,8 +6,14 @@ import Button from "@/components/shared/button";
 
 export default function CallToAction(): JSX.Element {
     return (
-        <div className="relative bg-sky-400" id="waves">
-            <div className="flex z-10 flex-col gap-8 py-14 px-8 md:py-28 md:px-16 bg-blur">
+        <div
+            className="overflow-hidden relative bg-sky-400" // Container styles
+        >
+            {/* Parallax Background */}
+            <div className="absolute inset-0 bg-fixed bg-center bg-cover bg-waves" />
+
+            {/* Content Section */}
+            <div className="flex relative z-10 flex-col gap-8 py-14 px-8 bg-opacity-80 md:py-28 md:px-16 bg-blur">
                 <h1>Transform Your Business with Us</h1>
                 <p className="text-xl text-sky-900">
                     At Abdellatif Dev, we offer top-notch software engineering
@@ -26,6 +32,8 @@ export default function CallToAction(): JSX.Element {
                     </Link>
                 </div>
             </div>
+
+            {/* Floating Logo */}
             <Image
                 src={AdLogo}
                 alt="logo"
