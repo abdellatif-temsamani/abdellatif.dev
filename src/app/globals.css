@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#waves {
-    background-image: url("/images/effects/grainy.png"),
-        url("/images/effects/patterns.png");
-    background-size: 100%;
-    background-repeat: repeat;
-}
-
 @layer base {
     * {
         padding: 0;
@@ -151,12 +144,22 @@
         padding-left: 32px;
     }
 
+    .paragraph {
+        padding-left: 32px;
+    }
+
     .transition-500 {
         @apply transition-all duration-500;
     }
 
     .bg-blur {
         backdrop-filter: blur(1px);
+    }
+
+    .bg-waves {
+        @apply bg-cover;
+        background-image: url("/images/effects/grainy.png"),
+            url("/images/effects/patterns.png");
     }
 }
 

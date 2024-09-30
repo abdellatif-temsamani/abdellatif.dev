@@ -1,9 +1,5 @@
 import { Akaya_Telivigala } from "next/font/google";
 
-/**
- * akayaTelivigala font
- *
- */
 const akayaTelivigala = Akaya_Telivigala({
     subsets: ["latin"],
     weight: ["400"],

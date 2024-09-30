@@ -15,7 +15,10 @@ export default function Testimonials(): JSX.Element {
                 {testimonials.map((testimonial) => {
                     return (
                         <div key={testimonial.user.name}>
-                            <TestimonialCard testimonial={testimonial} />
+                            <TestimonialCard
+                                className="hover:shadow-none transition-500 shadow-primary"
+                                testimonial={testimonial}
+                            />
                         </div>
                     );
                 })}

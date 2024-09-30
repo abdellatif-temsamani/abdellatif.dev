@@ -11,10 +11,11 @@ type StarsProps = {
  */
 export default function Stars({ rating }: Readonly<StarsProps>) {
     function setStarColor(index: number): string {
+        const base = "size-8 ";
         if (index < rating) {
-            return "fill-sky-400";
+            return base + "fill-sky-400";
         } else {
-            return "fill-sky-950";
+            return base + "fill-sky-950";
         }
     }
     return (
@@ -22,7 +23,7 @@ export default function Stars({ rating }: Readonly<StarsProps>) {
             {new Array(5).fill(5).map((_, index: number) => {
                 return (
                     <div key={index}>
-                        <FaStar className={`size-8   ${setStarColor(index)}`} />
+                        <FaStar className={setStarColor(index)} />
                     </div>
                 );
             })}

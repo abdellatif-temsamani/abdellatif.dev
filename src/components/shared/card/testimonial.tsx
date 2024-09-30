@@ -1,28 +1,27 @@
+import { cva, VariantProps } from "class-variance-authority";
 import Image from "next/image";
 import Link from "next/link";
+import { ComponentProps } from "react";
 
 import Stars from "@/components/shared/rating/stars";
 import { Testimonial } from "@/lib/testimonial";
 
-/**
- * @type {TestimonialCardProps}
- *
- * @property testimonial
- */
-type TestimonialCardProps = {
-    testimonial: Testimonial;
-};
+const TestimonialCardStyles = cva(
+    "flex flex-col gap-4 p-8 border-4 md:gap-4" +
+    "hover:shadow-none transition-500 shadow-primary" +
+    "bg-sky-50 border-sky-950",
+);
 
-/**
- * TestimonialCard component
- *
- * @param {TestimonialCardProps}
- */
+type TestimonialCardProps = VariantProps<typeof TestimonialCardStyles> &
+    ComponentProps<"div"> & { testimonial: Testimonial };
+
 export default function TestimonialCard({
     testimonial,
+    className,
+    ...props
 }: Readonly<TestimonialCardProps>) {
     return (
-        <div className="flex flex-col gap-4 p-8 border-4 md:gap-4 hover:shadow-none bg-sky-50 shadow-primary transition-500 border-sky-950">
+        <div {...props} className={TestimonialCardStyles({ className })}>
             <Stars rating={testimonial.stars} />
             <div>
                 <svg
