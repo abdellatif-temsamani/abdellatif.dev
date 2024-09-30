@@ -2,7 +2,17 @@ import Link from "next/link";
 import { useRef } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
 
-import { type NavLinkProp, navLinks } from "@/lib/routes";
+import { type NavLinkProp } from "@/lib/routes";
+
+export const navLinks: NavLinkProp[] = [
+    { title: "About", href: "/about" },
+    { title: "Services", href: "/services" },
+    /**
+     * TODO: UNCOMMENT LATER
+     * { title: "Case Studies", href: "/case-studies" },
+     */
+    { title: "Contact us", href: "/contact" },
+];
 
 /**
  * Nav component
@@ -10,10 +20,8 @@ import { type NavLinkProp, navLinks } from "@/lib/routes";
  * @returns {JSX.Element}
  */
 export default function Nav(): JSX.Element {
-    // Reference to the hidden checkbox input
     const menuToggleRef = useRef<HTMLInputElement>(null);
 
-    // Function to hide the menu by unchecking the checkbox
     const handleLinkClick = () => {
         if (menuToggleRef.current) {
             menuToggleRef.current.checked = false;

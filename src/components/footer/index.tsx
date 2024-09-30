@@ -2,14 +2,9 @@ import CopyRight from "./CopyRight";
 import Info from "./Info";
 import Logo from "./Logo";
 
-/**
- * Footer component
- *
- * @returns {JSX.Element}
- */
 export default function Footer(): JSX.Element {
     return (
-        <footer className="flex flex-col gap-7 px-10 pt-16 pb-8 md:px-32 bg-sky-200 bg-waves bg-cover">
+        <footer className="flex flex-col gap-7 px-10 pt-16 pb-8 md:px-32 bg-waves bg-sky-200">
             <Logo />
             <Info />
 

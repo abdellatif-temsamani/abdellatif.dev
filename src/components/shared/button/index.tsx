@@ -3,9 +3,9 @@ import { ComponentProps } from "react";
 
 const buttonStyles = cva(
     "py-2 px-8 font-black text-lg shadow-primary active:shadow-none " +
-        " hover:shadow-none transition-500 w-full  " +
-        " active:translate-y-1 active:scale-95 transition-all duration-300 " +
-        " disabled:shadow-none disabled:bg-gray-100 disabled:text-gray-500", // base class
+    " hover:shadow-none transition-500 w-full  " +
+    " active:translate-y-1 active:scale-95 transition-all duration-300 " +
+    " disabled:shadow-none disabled:bg-gray-100 disabled:text-gray-500", // base class
     {
         variants: {
             width: {

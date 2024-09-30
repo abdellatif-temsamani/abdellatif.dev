@@ -6,23 +6,7 @@ import { Feature } from "@/lib/features";
 
 const CardStyles = cva(
     "flex border-4 flex-col size-full flex-grow gap-4 justify-evenly py-4 px-8 " +
-        "hover:shadow-none bg-sky-50 transition-500 shadow-card",
-    {
-        variants: {
-            width: {
-                fit: "md:w-fit",
-                half: "md:w-1/2",
-            },
-            color: {
-                primary: "bg-sky-400",
-                secondary: "bg-sky-50",
-            },
-        },
-        defaultVariants: {
-            width: "fit",
-            color: "primary",
-        },
-    },
+    "hover:shadow-none bg-sky-50 transition-500 shadow-card",
 );
 
 type CardProps = VariantProps<typeof CardStyles> &
