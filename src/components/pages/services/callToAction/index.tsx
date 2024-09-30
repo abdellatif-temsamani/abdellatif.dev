@@ -8,7 +8,7 @@ export default function CallToAction(): JSX.Element {
     return (
         <div className="overflow-hidden relative bg-sky-400">
             <div className="absolute inset-0 bg-fixed bg-center bg-cover bg-waves" />
-            <div className="flex relative z-10 flex-col gap-8 py-14 px-8 bg-opacity-80 md:py-28 md:px-16 bg-blur">
+            <div className="flex relative z-10 flex-col gap-8 py-14 px-8 bg-opacity-80 md:py-28 md:px-16 backdrop-blur-[1px]">
                 <h1>Transform Your Business with Us</h1>
                 <p className="text-xl text-sky-900">
                     At Abdellatif Dev, we offer top-notch software engineering
@@ -31,7 +31,7 @@ export default function CallToAction(): JSX.Element {
             <Image
                 src={AdLogo}
                 alt="logo"
-                className="hidden absolute right-16 bottom-16 scale-125 z-0 md:block"
+                className="hidden absolute right-16 bottom-16 z-0 scale-125 md:block"
             />
         </div>
     );

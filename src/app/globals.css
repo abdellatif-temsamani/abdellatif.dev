@@ -152,10 +152,6 @@
         @apply transition-all duration-500;
     }
 
-    .bg-blur {
-        backdrop-filter: blur(1px);
-    }
-
     .bg-waves {
         @apply bg-cover;
         background-image: url("/images/effects/grainy.png"),
