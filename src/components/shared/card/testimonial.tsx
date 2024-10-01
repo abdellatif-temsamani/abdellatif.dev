@@ -8,13 +8,18 @@ import { Testimonial } from "@/lib/testimonial";
 
 const TestimonialCardStyles = cva(
     "flex flex-col gap-4 p-8 border-4 md:gap-4" +
-    "hover:shadow-none transition-500 shadow-primary" +
-    "bg-sky-50 border-sky-950",
+    "hover:shadow-none bg-sky-50 shadow-primary transition-500 border-sky-950" +
+    "hover:shadow-none transition-500 shadow-primary",
 );
 
 type TestimonialCardProps = VariantProps<typeof TestimonialCardStyles> &
     ComponentProps<"div"> & { testimonial: Testimonial };
 
+/**
+ * TestimonialCard component
+ *
+ * @param {TestimonialCardProps}
+ */
 export default function TestimonialCard({
     testimonial,
     className,
