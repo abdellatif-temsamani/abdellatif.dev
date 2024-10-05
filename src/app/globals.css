@@ -154,13 +154,18 @@
 
     .bg-waves {
         @apply bg-cover;
+        background-image: url("/images/effects/patterns.png");
+    }
+
+    .bg-grain-waves {
+        @apply bg-cover;
         background-image: url("/images/effects/grainy.png"),
             url("/images/effects/patterns.png");
     }
 
-    .bg-waves {
-        background-image: url("/images/effects/grainy.png"),
-            url("/images/effects/patterns.png");
+    .bg-grain {
+        @apply bg-cover;
+        background-image: url("/images/effects/grainy.png");
     }
 }
 

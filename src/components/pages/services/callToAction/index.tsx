@@ -7,8 +7,9 @@ import Button from "@/components/shared/button";
 export default function CallToAction(): JSX.Element {
     return (
         <div className="overflow-hidden relative bg-sky-400">
-            <div className="absolute inset-0 bg-fixed bg-center bg-cover bg-waves" />
-            <div className="flex relative z-10 flex-col gap-8 py-14 px-8 bg-opacity-80 md:py-28 md:px-16 backdrop-blur-[1px]">
+            <div className="absolute inset-0 h-full bg-fixed bg-center bg-cover z-[2] bg-waves" />
+            <div className="absolute inset-0 h-full bg-fixed bg-center bg-cover z-[2] bg-grain" />
+            <div className="flex relative z-10 flex-col gap-8 py-14 px-8 bg-opacity-80 md:py-28 md:px-16">
                 <h1>Transform Your Business with Us</h1>
                 <p className="text-xl text-sky-900">
                     At Abdellatif Dev, we offer top-notch software engineering
