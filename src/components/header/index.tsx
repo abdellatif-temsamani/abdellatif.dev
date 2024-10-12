@@ -1,5 +1,3 @@
-"use client";
-
 import AdLogo from "@public/images/ad.svg";
 import Image from "next/image";
 import Link from "next/link";

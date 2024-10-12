@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { useRef } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa6";
