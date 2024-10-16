@@ -15,7 +15,7 @@
 
     html {
         @apply from-sky-50 to-sky-200 bg-gradient-to-b;
-        @apply flex flex-col gap-28;
+        @apply flex flex-col;
     }
 
     body {
@@ -138,10 +138,6 @@
         .p-vertical {
             padding: 0 32px 0 32px;
         }
-    }
-
-    .paragraph {
-        padding-left: 32px;
     }
 
     .paragraph {
