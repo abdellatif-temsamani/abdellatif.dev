@@ -1,4 +1,5 @@
 "use server";
+import { State } from "@/lib/actions";
 import { Body, sendEmail } from "@/lib/emailer";
 
 type Data = {
@@ -34,7 +35,7 @@ function getDeleteDataBody(formData: FormData): Body {
     };
 }
 
-export async function sendRequest(_prevState: any, formData: FormData) {
+export async function sendRequest(_prevState: State, formData: FormData) {
     const checked = formData.get("agreed");
     if (checked === "on") {
         return {
