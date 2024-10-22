@@ -1,7 +1,15 @@
 {
-    "extends": "next/core-web-vitals",
-    "plugins": ["simple-import-sort"],
+    "extends": [
+        "eslint:recommended",
+        "next/core-web-vitals",
+        "plugin:react-hooks/recommended",
+        "next/typescript",
+        "plugin:react/recommended"
+    ],
+    "plugins": ["simple-import-sort", "react-hooks"],
     "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error"
     },
